@@ -1,0 +1,97 @@
+.process_container{
+    padding: 0 0 100px;
+}
+
+.process_header {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-start; /* Prevent extra vertical centering */
+    align-items: center; /* Center items horizontally inside the div */
+    text-align: center; /* Center-align text inside the div */
+    padding: 0;
+    margin: 0 auto; /* Center the div horizontally */
+    width: 50%; /* Optional: Restrict the width */
+}
+
+.read-more-btn {
+    margin-top: 20px;
+    background: linear-gradient(to right, #9924d2, #7023e4);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: start;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: none;
+    display: flex;
+}
+
+.process-card_container{
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    gap: 10px;
+    padding: 50px 50px;
+}
+
+.process-card-right_wrapper-body{
+    /*display: grid;*/
+    /*grid-template-columns: 2fr 1fr;*/
+    background: #f5f4f6;
+    border-radius: 30px 60% 60% 30px;
+    height: 100%;
+}
+
+.process-card-left_wrapper-body{
+    /*display: grid;*/
+    /*grid-template-columns: 2fr 1fr;*/
+    background: #f5f4f6;
+    border-radius: 60% 30px 30px 60%;
+    height: 100%;
+}
+
+
+.process-card_content{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.process-card-left_content{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    float: right;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.card-image_right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card-image_left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.process-card-right_wrapper{
+    position: relative;
+    height: 500px;
+}

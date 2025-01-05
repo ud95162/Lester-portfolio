@@ -1,0 +1,21 @@
+
+/*-----------------------------------------*/
+
+.do_description__right-content-card{
+    border-radius: 30px; /* Rounds the corners */
+    /*padding: 20px 30px; !* Adds inner spacing *!*/
+    text-align: left; /* Aligns text to the left */
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.do_description__right-content-card__content{
+    padding: 40px 0 40px 40px;
+}
+
+.do_description__right-content-card__body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}

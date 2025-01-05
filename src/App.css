@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* H1 Styles */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 48px; /* 48Pt */
+  letter-spacing: -0.25px; /* Font Dpace */
+  line-height: 56px; /* Line Height */
+  color: #081226;
+}
+
+/* H2 Styles */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 30px; /* 30Pt */
+  letter-spacing: -0.25px; /* Font Dpace */
+  line-height: 36px; /* Line Height */
+  color: #081226;
+}
+
+/* H3 Styles */
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 18px; /* 18Pt */
+  letter-spacing: -0.25px; /* Font Dpace */
+  line-height: 24px; /* Line Height */
+  color: #081226;
+}
+
+/* Body Font Styles */
+body, p, span, li, a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 16px; /* 16Pt */
+  letter-spacing: 0.5px; /* Font Dpace */
+  line-height: 26px; /* Line Height */
+  color: #081226;
+}
+
+.space10{
+  margin: 10px 0;
 }

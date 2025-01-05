@@ -1,0 +1,26 @@
+.summary_body{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.summary_wrapper{
+    padding: 100px 100px 0;
+    /*width: 100%;*/
+    height: 60vh;
+}
+
+.summary_about-btn{
+    margin-top: 50px;
+    display: flex;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    background: linear-gradient(to right, #9924d2, #7023e4);
+    /*border: 2px solid white;*/
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: none;
+}
