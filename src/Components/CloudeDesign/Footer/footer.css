@@ -1,6 +1,7 @@
 .footer_container{
-    padding: 50px 50px;
+    padding: 50px 100px 150px;
     background: linear-gradient(to bottom, #e5e5e5, #bbbbbb);
+    position: relative;
 }
 
 .footer_top{
@@ -36,6 +37,29 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-bottom-section{
+    position: absolute; /* Positions it at the bottom of the footer */
+    bottom: 10px; /* Add some spacing from the bottom */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+}
+.footer-contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.footer-contact-details a{
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .footer-body_section{

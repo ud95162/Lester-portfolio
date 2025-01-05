@@ -13,11 +13,16 @@ const Footer = () => {
                     </div>
                     <div className="footer_top-social_icons">
                         <img src="/cloudedesign/icons/linkedin.svg" alt="linkedin" style={{width: "30px"}}/>
-                        <img src="/cloudedesign/icons/twitter.svg" alt="twitter" style={{width: "30px", marginLeft: "5px"}}/>
-                        <img src="/cloudedesign/icons/youtube.svg" alt="youtube" style={{width: "30px", marginLeft: "5px"}}/>
-                        <img src="/cloudedesign/icons/instagram.svg" alt="insta" style={{width: "30px", marginLeft: "5px"}}/>
-                        <img src="/cloudedesign/icons/whatsapp.svg" alt="whatsapp" style={{width: "30px", marginLeft: "5px"}}/>
-                        <img src="/cloudedesign/icons/facebook.svg" alt="fb" style={{width: "30px", marginLeft: "5px"}}/>
+                        <img src="/cloudedesign/icons/twitter.svg" alt="twitter"
+                             style={{width: "30px", marginLeft: "5px"}}/>
+                        <img src="/cloudedesign/icons/youtube.svg" alt="youtube"
+                             style={{width: "30px", marginLeft: "5px"}}/>
+                        <img src="/cloudedesign/icons/instagram.svg" alt="insta"
+                             style={{width: "30px", marginLeft: "5px"}}/>
+                        <img src="/cloudedesign/icons/whatsapp.svg" alt="whatsapp"
+                             style={{width: "30px", marginLeft: "5px"}}/>
+                        <img src="/cloudedesign/icons/facebook.svg" alt="fb"
+                             style={{width: "30px", marginLeft: "5px"}}/>
                     </div>
                 </div>
 
@@ -47,10 +52,39 @@ const Footer = () => {
 
                     <div className="footer-body_section">
                         <img src="/cloudedesign/cloude_logo_black.png" alt="logo" style={{width: "320px"}}/>
-                        <span style={{textAlign: "center", fontSize: "12px"}}>© CloudeDesign 2024 - All Rights Reserved </span>
+                        <div className="footer-contact-details">
+                            <span style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
+                                <img src="/cloudedesign/icons/email.svg" alt="email" style={{width: "16px"}}/>
+                                <a href='mailto:info@cloudedesign.com' target='_blank'
+                                     rel="noopener noreferrer" style={{fontWeight: 600, marginLeft: "8px"}}>info@cloudedesign.com
+                                </a>
+                            </span>
+
+                            <span style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
+                                <img src="/cloudedesign/icons/mobile.svg" alt="mobile" style={{width: "16px"}}/>
+                                <a href="tel:+94 780 589 4780" target='_blank' rel="noopener noreferrer"
+                                   style={{fontWeight: 600, marginLeft: "8px"}}> +94 780 589 4780
+                                </a>
+                            </span>
+
+                            <span style={{fontWeight: 600, display: "flex", justifyContent: "flex-start", alignItems: "center", fontSize: "14px"}}>
+                                <img src="/cloudedesign/icons/location.svg" alt="location" style={{width: "16px", marginRight: "8px"}}/>
+                                No159/13, Premier Park, Mullegama, Homagama,Sri Lanka</span>
+
+                        </div>
                     </div>
                 </div>
+
+                <div className="footer-bottom-section">
+                    <span style={{
+                        textAlign: "center",
+                        width: '100%',
+                        fontSize: "14px"
+                    }}>© CloudeDesign 2024 - All Rights Reserved </span>
+
+                </div>
             </div>
+
         </>
     )
 }
