@@ -40,12 +40,12 @@ const Process = () => {
                              className="card-image_right"/>
                     </div>
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                        <img src="/cloudedesign/icons/arrow.svg" alt="right-arrow" style={{width: "80px"}}/>
+                        <img src="/cloudedesign/icons/arrow.svg" alt="right-arrow" style={{width: "80px"}} className='first-arrow'/>
                     </div>
                     <div className="process-card-right_wrapper">
                         <div className="process-card-right_wrapper-body">
                             <div className="process-card_content">
-                                <h2>Product Analysis</h2>
+                                <h2>Product Planing</h2>
                                 <span>
                             We provide business analysis, market insights, and tailored solutions to meet your goals.
                             Our process ensures clear goals, actionable plans, and accurate cost estimates.
@@ -58,7 +58,7 @@ const Process = () => {
                     </div>
                     <div></div>
                     <div></div>
-                    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}} className='order6'>
                         <img src="/cloudedesign/icons/arrow.svg" alt="right-arrow"
                              style={{width: "80px", transform: "rotate(90deg)"}}/>
                     </div>
@@ -80,7 +80,7 @@ const Process = () => {
 
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                         <img src="/cloudedesign/icons/arrow.svg" alt="right-arrow"
-                             style={{width: "80px", transform: "rotate(180deg)"}}/>
+                             className="third-arrow" />
                     </div>
 
                     <div className="process-card-right_wrapper">

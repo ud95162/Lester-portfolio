@@ -24,3 +24,65 @@
     max-height: 100%; /* Ensures the image fits within the height of the parent */
     object-fit: contain; /* Ensures the image scales proportionally without distortion */
 }
+.projects-bottom-span{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    bottom: 75px; right: 30px;
+    gap: 10px;
+}
+.projects-bottom-span-text{
+    color: white;
+    width: 58%;
+    text-align: right;
+    font-style: italic;
+}
+
+@media (max-width: 1300px) {
+    .projects-bottom-span{
+        bottom: 50px;
+    }
+    
+}
+@media (max-width: 1048px) {
+    .projects-bottom-span {
+        bottom: 30px;
+
+    }
+}
+
+@media (max-width: 1147px) {
+
+    .projects-bottom-span{
+        bottom: 20px;
+    }
+    .projects-bottom-span-text{
+        width: 50%;
+    }
+}
+@media (max-width: 968px) {
+    .projects-bottom-span-text{
+        font-size: 12px;
+        width: 45%;
+    }
+    .projects-bottom-span{
+        bottom: 10px;
+    }
+    .projects-bottom-span button{
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .projects-bottom-span-text{
+        font-size: 8px;
+    }
+    .projects-bottom-span button{
+        font-size: 8px;
+    }
+}
+@media (max-width: 648px) {
+    .projects-bottom-span{
+        display: none;
+    }
+}

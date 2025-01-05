@@ -42,9 +42,8 @@ const OurProjects = () => {
                     </div>
 
 
-                    <div style={{display: "flex", justifyContent: "end", alignItems: "center",
-                        position: "absolute", bottom: "75px", right: "30px", gap: "10px"}}>
-                        <span style={{color: "white", width: "58%", textAlign: "right", fontStyle: "italic"}}>We showcase a portfolio of successful projects highlighting
+                    <div className="projects-bottom-span">
+                        <span className="projects-bottom-span-text">We showcase a portfolio of successful projects highlighting
                         our expertise and impactful solutions</span>
                             <button
                                 className="summary_about-btn"

@@ -100,7 +100,7 @@
     transition: 0.3s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 905px) {
     .header {
         justify-content: center;
     }
@@ -112,7 +112,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1028px) {
     .header {
         justify-content: space-between;
     }
@@ -164,11 +164,11 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1028px) {
     .header {
         top: 0;
         z-index: 10;
-        background-color: rgb(247, 246, 244, 0.6);
+        /*background-color: rgb(247, 246, 244, 0.6);*/
         position: sticky;
         align-items: center;
     }

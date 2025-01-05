@@ -102,6 +102,7 @@
     flex-direction: column;
     gap: 4px;
     cursor: pointer;
+    color:white;
 }
 /* Hamburger Open (Close Icon) */
 .banner_hamburger.open span:nth-child(1) {
@@ -120,22 +121,25 @@
 .banner_hamburger span {
     width: 25px;
     height: 2px;
-    background-color: black;
+    background-color: white;
     position: relative;
     transition: 0.3s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1028px) {
     .banner_header{
         justify-content: center;
     }
     .banner_logo{
         padding-left: 0;
     }
+    .banner_nav-bar li a{
+        color: black;
+    }
 
 }
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1028px) {
     .banner_header {
         justify-content: space-between;
     }
@@ -191,7 +195,7 @@
     .banner_header {
         top:0;
         z-index: 10;
-        background-color:  rgb(247, 246, 244,0.6);
+        /*background-color:  rgb(247, 246, 244,0.6);*/
         position: sticky;
         align-items: center;
     }

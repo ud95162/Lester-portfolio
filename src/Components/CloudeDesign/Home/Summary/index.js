@@ -7,23 +7,15 @@ const Summary = () => {
         <>
             <div className="summary_wrapper">
                 <div className="summary_body">
-                    <div>
+                    <div className="summery-main">
                         <h1>
-                        <span
-                            style={{
-                                background: "linear-gradient(to right, #9d1cd0, #6519d1)", // Gradient background
-                                WebkitBackgroundClip: "text", // Clips the background to text
-                                WebkitTextFillColor: "transparent", // Makes the text transparent to show the gradient
-                                fontSize: "48px",
-                                fontWeight: "600",
-                            }}
-                        >
+                        <span className="summery-header-span">
                                 ELEVATING
                             </span>
                             &nbsp;BRANDS THROUGH DESIGN, MARKETING, & TECHNOLOGY
                         </h1>
 
-                        <div style={{width: "60%"}}>
+                        <div className="summery-description">
                         <span>We specialize in design, marketing, and technology to help business grow & thrive.
                      Our innovative solutions bridge creativity and strategy for impactful results.</span>
                         </div>
@@ -32,7 +24,7 @@ const Summary = () => {
                             About CloudeDesign
                         </button>
                     </div>
-                    <div>
+                    <div className='summer-img'>
                         <img src="/cloudedesign/robot.png" alt="robot"/>
                     </div>
                 </div>

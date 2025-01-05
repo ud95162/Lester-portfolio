@@ -14,10 +14,17 @@
 .do_description-card {
     display: flex; /* Use flexbox to adjust alignment dynamically */
     flex-direction: column; /* Align items vertically */
-    justify-content: flex-start; /* Prevent extra vertical centering */
+    justify-content: center; /* Prevent extra vertical centering */
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center-align the text inside the card */
     padding: 0; /* Remove extra padding if any */
     margin: 0; /* Ensure no extra margin */
     height: auto; /* Fit the height to the content */
+}
+
+@media (max-width: 1028px) {
+    .do_body{
+        grid-template-columns: 1fr;
+    }
+    
 }

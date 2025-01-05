@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="footer_container">
                 <div className="footer_top">
                     <div className="footer_top-header">
-                        <h1 style={{fontSize: "88px"}}>TALK TO US</h1>
+                        <h1 className='footer-header-h1'>TALK TO US</h1>
                     </div>
                     <div className="footer_top-arrow">
                         <img src="/cloudedesign/icons/right-arrow-black.svg" alt="black-arrow" style={{width: "60px"}}/>
@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-body">
-                    <div className="footer-body_section">
+                    <div className="footer-body_section quick">
                         <h3>NAVIGATION</h3>
                         <span style={{fontWeight: 600}}>HOME</span>
                         <span style={{fontWeight: 600}}>OUR SERVICES</span>
@@ -35,7 +35,7 @@ const Footer = () => {
                         <span style={{fontWeight: 600}}>ABOUT US</span>
                     </div>
 
-                    <div className="footer-body_section">
+                    <div className="footer-body_section quick">
                         <h3>COMPANY</h3>
                         <span style={{fontWeight: 600}}>CAREERS</span>
                         <span style={{fontWeight: 600}}>CONTACT</span>
@@ -43,7 +43,7 @@ const Footer = () => {
                         <span style={{fontWeight: 600}}>ABOUT US</span>
                     </div>
 
-                    <div className="footer-body_section">
+                    <div className="footer-body_section quick">
                         <h3>RESOURCES</h3>
                         <span style={{fontWeight: 600}}>TERMS & CONDITIONS</span>
                         <span style={{fontWeight: 600}}>PRIVACY</span>

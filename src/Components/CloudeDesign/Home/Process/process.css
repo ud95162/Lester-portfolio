@@ -95,3 +95,85 @@
     position: relative;
     height: 500px;
 }
+.third-arrow{
+    transform: rotate(180deg);
+    width: 80px;
+}
+@media (max-width: 1800px) {
+    .card-image_right{
+        opacity: 0.2;
+    }
+    .card-image_left{
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 1080px) {
+    .process-card_container{
+        grid-template-columns: 1fr;
+
+    }
+    .first-arrow{
+        transform: rotate(90deg);
+    }
+    .card-image_right{
+        opacity: 1;
+    }
+    .card-image_left{
+        opacity: 1;
+    }
+    .third-arrow{
+        transform: rotate(90deg);
+    }
+
+
+    .process-card_container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 50px 50px;
+    }
+
+    .process-card-right_wrapper {
+        /*flex: 1 1 calc(33.333% - 20px); !* Flexible card width *!*/
+        height: 500px;
+        position: relative;
+    }
+
+    .process-card_container {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    /* Swap 3rd and 4th cards */
+    .process-card-right_wrapper:nth-child(7) {
+        order: 6; /* Move 3rd card after the arrow */
+    }
+
+    .process-card-right_wrapper:nth-child(9) {
+        order: 4; /* Move 4th card before the arrow */
+    }
+    .order6{
+        order: 5;
+    }
+
+
+}
+
+@media (max-width: 840px) {
+
+    .card-image_right{
+        opacity: 0.2;
+    }
+    .card-image_left{
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-image_right{
+        width: 100%;
+    }
+    .card-image_left{
+        width: 100%;
+    }
+}
