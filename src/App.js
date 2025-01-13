@@ -6,6 +6,7 @@ import Footer from "./Components/CloudeDesign/Footer";
 import Services from "./Components/CloudeDesign/Services";
 import AboutUs from "./Components/CloudeDesign/AboutUs";
 import Careers from "./Components/CloudeDesign/Careers";
+import ContactUs from "./Components/CloudeDesign/ContactUs";
 
 function App() {
     return (
@@ -15,7 +16,8 @@ function App() {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/services" element={<Services/>}/>
                 <Route path="/about" element={<AboutUs/>}/>
-                <Route path="/careers" element={<Careers/>}/>
+                <Route path="/work_with_us" element={<Careers/>}/>
+                <Route path="/contact" element={<ContactUs/>}/>
             </Routes>
             <Footer/>
         </>

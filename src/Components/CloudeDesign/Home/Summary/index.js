@@ -25,9 +25,10 @@ const Summary = ({breadcrumb,gradientHeader,defaultHeader,content,button,section
                         <span>{content}</span>
                         </div>
 
+                        { button ?
                         <button className='summary_about-btn' style={{cursor: "pointer"}}>
                             {button}
-                        </button>
+                        </button> : ""}
                     </div>
                     <div className='summer-img'>
                         <img src={sectionImage} alt="robot"/>

@@ -29,9 +29,9 @@ const Services = () => {
                                buttonText="Read More">
                 </ContentOnLeft>
                 <ContentOnRight
-                    contentImage={"./cloudedesign/services/branding.png"}
+                    contentImage={"./cloudedesign/services/Branding.png"}
                                 subTitle="Branding"
-                                content="BUolding powerful brand indetites that form a deep connection with your target audience and  differentiate you in the  marketplace"
+                                content="Building powerful brand indetites that form a deep connection with your target audience and  differentiate you in the  marketplace"
                                 buttonText="Read More"
                                 >
                 </ContentOnRight>

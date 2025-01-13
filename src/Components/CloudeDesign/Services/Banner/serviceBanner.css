@@ -1,5 +1,5 @@
-.banner_wrapper {
-    height: 100vh;
+.service-banner_wrapper {
+    height: 90vh;
     /* background-image: url('public/cloudedesign/banner.jpg'); */
     width: 100%;
     background-size: cover; /* Removed quotes */

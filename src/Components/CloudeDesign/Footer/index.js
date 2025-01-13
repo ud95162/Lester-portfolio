@@ -62,12 +62,23 @@ const Footer = () => {
 
                             <span style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
                                 <img src="/cloudedesign/icons/mobile.svg" alt="mobile" style={{width: "16px"}}/>
-                                <a href="tel:+94 780 589 4780" target='_blank' rel="noopener noreferrer"
-                                   style={{fontWeight: 600, marginLeft: "8px"}}> +94 780 589 4780
-                                </a>
+                                <div style={{display: "grid"}}>
+                                   <a href="tel:+94 70 589 4780" target='_blank' rel="noopener noreferrer"
+                                      style={{fontWeight: 600, marginLeft: "8px"}}> +94 70 589 4780
+                                   </a>
+                                   <a href="tel:+94 11 217 5690" target='_blank' rel="noopener noreferrer"
+                                      style={{fontWeight: 600, marginLeft: "8px"}}> +94 11 217 5690
+                                   </a>
+                                </div>
+
                             </span>
 
-                            <span style={{fontWeight: 600, display: "flex", justifyContent: "flex-start", alignItems: "center", fontSize: "14px"}}>
+                            <span style={{
+                                fontWeight: 600,
+                                display: "flex",
+                                justifyContent: "flex-start",
+                                alignItems: "center",
+                                fontSize: "14px"}}>
                                 <img src="/cloudedesign/icons/location.svg" alt="location" style={{width: "16px", marginRight: "8px"}}/>
                                 No159/13, Premier Park, Mullegama, Homagama,Sri Lanka</span>
 

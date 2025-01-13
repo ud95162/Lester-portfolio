@@ -37,7 +37,7 @@ const ServiceBanner = ({ backgroundImage, defaultHeader, gradientHeader }) => {
 
     return (
         <>
-            <div className="banner_wrapper" style={{ backgroundImage: `url(${backgroundImage})` }}>
+            <div className="service-banner_wrapper" style={{ backgroundImage: `url(${backgroundImage})` }}>
                 {showHeader && (
                     <div className="banner_header">
                         <div className="banner_logo">
@@ -58,8 +58,8 @@ const ServiceBanner = ({ backgroundImage, defaultHeader, gradientHeader }) => {
                                 <li className={`banner_nav-item ${activeNav === '/services' ? 'active' : ''}`}>
                                     <a onClick={() => handleNavigate('/services')}>OUR SERVICES</a>
                                 </li>
-                                <li className={`banner_nav-item ${activeNav === '/careers' ? 'active' : ''}`}>
-                                    <a onClick={() => handleNavigate('/careers')}>WORK WITH US</a>
+                                <li className={`banner_nav-item ${activeNav === '/work_with_us' ? 'active' : ''}`}>
+                                    <a onClick={() => handleNavigate('/work_with_us')}>WORK WITH US</a>
                                 </li>
                                 <li className={`banner_nav-item ${activeNav === '/about' ? 'active' : ''}`}>
                                     <a onClick={() => handleNavigate('/about')}>ABOUT US</a>
@@ -71,7 +71,7 @@ const ServiceBanner = ({ backgroundImage, defaultHeader, gradientHeader }) => {
                             <div className="banner_menu-items">
                                 <div className="banner_nav-item">
                                     <button className='banner_header-button' style={{ cursor: "pointer" }}
-                                            onClick={() => handleNavigate('/')}>Talk to Us
+                                            onClick={() => handleNavigate('/contact')}>Talk to Us
                                     </button>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ const ServiceBanner = ({ backgroundImage, defaultHeader, gradientHeader }) => {
                     </div>
                 )}
 
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "end", height: "80vh" }}>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "end", height: "70vh" }}>
                     <div className="banner_header__title">
                         <h1 style={{ color: "white", textAlign: "center" }}>
                             {defaultHeader}&nbsp;

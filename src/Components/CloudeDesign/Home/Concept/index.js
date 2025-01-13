@@ -9,7 +9,7 @@ const Concept = () => {
                 <div className="concept_header">
                     <h3 style={{margin: 0}}>Vision to Reality</h3>
                     <h1 style={{marginTop: "10px"}}>
-                        From Concept to
+                        FROM CONCEPT TO
                         <span
                             style={{
                                 background: "linear-gradient(to right, #9d1cd0, #6519d1)",

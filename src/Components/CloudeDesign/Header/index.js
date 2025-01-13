@@ -41,7 +41,8 @@ const Header = () => {
     // Conditionally render header based on route and scroll
     if ((location.pathname === '/' ||
             location.pathname === '/services'||
-            location.pathname === '/about' || location.pathname === '/careers')
+            location.pathname === '/about' || location.pathname === '/work_with_us' ||
+            location.pathname === '/contact')
         && !showHeader) {
         return null; // Hide header
     }
@@ -66,8 +67,8 @@ const Header = () => {
                     <li className={`banner_nav-item ${activeNav === '/services' ? 'active' : ''}`}>
                         <a onClick={() => handleNavigate('/services')}>OUR SERVICES</a>
                     </li>
-                    <li className={`banner_nav-item ${activeNav === '/careers' ? 'active' : ''}`}>
-                        <a onClick={() => handleNavigate('/careers')}>WORK WITH US</a>
+                    <li className={`banner_nav-item ${activeNav === '/work_with_us' ? 'active' : ''}`}>
+                        <a onClick={() => handleNavigate('/work_with_us')}>WORK WITH US</a>
                     </li>
                     <li className={`banner_nav-item ${activeNav === '/about' ? 'active' : ''}`}>
                         <a onClick={() => handleNavigate('/about')}>ABOUT US</a>
@@ -79,7 +80,7 @@ const Header = () => {
                 <div className="menu-items">
                     <div className="nav-item">
                         <button className="header-button" style={{cursor: "pointer"}}
-                                onClick={() => handleNavigate('/')}>
+                                onClick={() => handleNavigate('/contact')}>
                             Talk to Us
                         </button>
                     </div>

@@ -5,6 +5,7 @@ import Summary from "../Home/Summary";
 import Concept from "../Home/Concept";
 import Service from "../Services/Service";
 import ExploreExpandInnovative from "./ExploreExpandInnovative";
+import CareerSummary from "./CareerSummary";
 
 const Careers = () =>  {
 
@@ -15,20 +16,20 @@ const Careers = () =>  {
                 defaultHeader="WHERE PASSION MEETS PURPOSE"
                 gradientHeader="JOIN US TODAY!"
             />
-            <Summary
-                breadcrumb="WORK WITH US"
-                gradientHeader="INNOVATIVE, INSPIRE, IMPACT"
-                defaultHeader="JOIN OUR TEAM!"
-                sectionImage="/cloudedesign/workwithus/robot.png"
-                content={"Our integrated calendar feature transforms your tasks and events into a dynamic to-do list, helping you manage your time more efficiently"}
-                button={"See Job Details"}
-            />
+
+            <div style={{display: 'flex', justifyContent: 'center', paddingTop: "2rem"}}>
+                <span>HOME&nbsp;</span>
+                <img src="/cloudedesign/icons/right-simple-arrow.svg" alt="arrow" style={{width: '12px'}}/>
+                <span> &nbsp;WORK WITH US</span>
+            </div>
 
             <ExploreExpandInnovative/>
 
             <Service/>
 
             <Concept/>
+
+            <CareerSummary/>
 
         </>
     )

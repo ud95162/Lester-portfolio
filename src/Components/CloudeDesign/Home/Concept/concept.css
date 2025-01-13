@@ -9,7 +9,7 @@
     align-items: center; /* Center items horizontally inside the div */
     text-align: center; /* Center-align text inside the div */
     margin: 0 auto; /* Center the div horizontally */
-    width: 50%; /* Optional: Restrict the width */
+    width: 55%; /* Optional: Restrict the width */
 }
 
 .concept_body{
