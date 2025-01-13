@@ -1,0 +1,31 @@
+
+.serviceContainer {
+    padding: 100px 30px 0;
+}
+
+
+.serviceHeader {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-start; /* Prevent extra vertical centering */
+    align-items: center; /* Center items horizontally inside the div */
+    text-align: center; /* Center-align text inside the div */
+    margin: 0 auto; /* Center the div horizontally */
+    width: 80%; /* Optional: Restrict the width */
+}
+
+
+
+.serviceHeaderSpan{
+    background: linear-gradient(to right, #9d1cd0, #6519d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.serviceContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}

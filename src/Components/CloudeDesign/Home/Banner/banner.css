@@ -239,7 +239,7 @@
 
 .banner_header__title{
     display: grid;
-    width: 50%;
+    width: 100%;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -307,4 +307,8 @@
     align-items: center;
     position: absolute;
     bottom: 40px;
+}
+
+.banner_nav-item.active a {
+    color: #c47440; /* Highlight color for active nav */
 }

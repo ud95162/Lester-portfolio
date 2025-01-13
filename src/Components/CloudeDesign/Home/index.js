@@ -11,7 +11,12 @@ const Home = () => {
 
     return (<>
             <Banner></Banner>
-            <Summary></Summary>
+            <Summary gradientHeader={"ELEVATING"}
+                     defaultHeader={"BRANDS THROUGH DESIGN, MARKETING, & TECHNOLOGY"}
+                     content="We specialize in design, marketing, and technology to help business grow & thrive.
+                     Our innovative solutions bridge creativity and strategy for impactful results."
+                     button={"About CloudeDesign"}
+                     sectionImage={"/cloudedesign/robot.png"}></Summary>
             <WhatWeDo></WhatWeDo>
             <Process></Process>
             <OurProjects></OurProjects>

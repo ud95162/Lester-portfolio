@@ -14,7 +14,7 @@ const ContentOnRight = ({ title, subTitle, content, backgroundImage, textColor }
                 }}
             >
                 <div className="do_description__right-content-card__body">
-                    <div></div>
+                   <div></div>
                     <div className="do_description__right-content-card__content">
                         <h1 style={{color: textColor, margin: 0}}>{title}</h1>
                         <h2 style={{color: textColor, marginTop: 0}}>{subTitle}</h2>

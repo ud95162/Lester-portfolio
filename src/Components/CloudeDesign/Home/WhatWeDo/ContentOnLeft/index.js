@@ -23,6 +23,7 @@ const ContentOnLeft = ({title, subTitle, content, backgroundImage, textColor}) =
                         Read More
                     </button>
                 </div>
+
             </div>
         </>
     )

@@ -7,10 +7,13 @@ const Banner = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [showHeader, setShowHeader] = useState(true); // State to toggle header visibility
+    const [activeNav, setActiveNav] = useState('/'); // State to track active navigation
+
     const navigate = useNavigate();
 
-    const handleNavigate = () => {
-        navigate('/');
+    const handleNavigate = (path) => {
+        setActiveNav(path);
+        navigate(path);
     };
 
     const toggleMenu = () => {
@@ -67,10 +70,18 @@ const Banner = () => {
 
                             {/* Menu Items */}
                             <ul className={`banner_menu-items ${isMenuOpen ? 'show' : ''}`}>
-                                <li className="banner_nav-item"><a href='/'>HOME</a></li>
-                                <li className="banner_nav-item"><a href='/services'>OUR SERVICES</a></li>
-                                <li className="banner_nav-item"><a href='/careers'>WORK WITH US</a></li>
-                                <li className="banner_nav-item"><a href='/about'>ABOUT US</a></li>
+                                <li className={`banner_nav-item ${activeNav === '/' ? 'active' : ''}`}>
+                                    <a onClick={() => handleNavigate('/')}>HOME</a>
+                                </li>
+                                <li className={`banner_nav-item ${activeNav === '/services' ? 'active' : ''}`}>
+                                    <a onClick={() => handleNavigate('/services')}>OUR SERVICES</a>
+                                </li>
+                                <li className={`banner_nav-item ${activeNav === '/careers' ? 'active' : ''}`}>
+                                    <a onClick={() => handleNavigate('/careers')}>WORK WITH US</a>
+                                </li>
+                                <li className={`banner_nav-item ${activeNav === '/about' ? 'active' : ''}`}>
+                                    <a onClick={() => handleNavigate('/about')}>ABOUT US</a>
+                                </li>
                                 <li></li>
                             </ul>
 
@@ -78,7 +89,7 @@ const Banner = () => {
                             <div className="banner_menu-items">
                                 <div className="banner_nav-item">
                                     <button className='banner_header-button' style={{cursor: "pointer"}}
-                                            onClick={handleNavigate}>Talk to Us
+                                            onClick={() => handleNavigate('/')}>Talk to Us
                                     </button>
                                 </div>
                             </div>
@@ -108,10 +119,10 @@ const Banner = () => {
 
                         <div style={{marginTop: "32px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                             <button className='banner_quotes_button' style={{cursor: "pointer"}}
-                                    onClick={handleNavigate}>Get Quotes
+                                    onClick={() => handleNavigate('/')}>Get Quotes
                             </button>
                             <button className='banner_header-button' style={{cursor: "pointer", marginLeft: "16px"}}
-                                    onClick={handleNavigate}>Get Started
+                                    onClick={() => handleNavigate('/')}>Get Started
                             </button>
                         </div>
 

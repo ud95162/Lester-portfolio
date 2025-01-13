@@ -2,30 +2,35 @@ import './summary.css';
 import React from "react";
 
 
-const Summary = () => {
+const Summary = ({breadcrumb,gradientHeader,defaultHeader,content,button,sectionImage}) => {
     return(
         <>
+            {breadcrumb ? <div style={{display: 'flex', justifyContent: 'center', paddingTop: "2rem"}}>
+                <span>HOME&nbsp;</span>
+                <img src="/cloudedesign/icons/right-simple-arrow.svg" alt="arrow" style={{width: '12px'}}/>
+                <span> &nbsp;{breadcrumb}</span>
+            </div>:""}
+
             <div className="summary_wrapper">
                 <div className="summary_body">
                     <div className="summery-main">
                         <h1>
                         <span className="summery-header-span">
-                                ELEVATING
+                                {gradientHeader}
                             </span>
-                            &nbsp;BRANDS THROUGH DESIGN, MARKETING, & TECHNOLOGY
+                            &nbsp;{defaultHeader}
                         </h1>
 
                         <div className="summery-description">
-                        <span>We specialize in design, marketing, and technology to help business grow & thrive.
-                     Our innovative solutions bridge creativity and strategy for impactful results.</span>
+                        <span>{content}</span>
                         </div>
 
                         <button className='summary_about-btn' style={{cursor: "pointer"}}>
-                            About CloudeDesign
+                            {button}
                         </button>
                     </div>
                     <div className='summer-img'>
-                        <img src="/cloudedesign/robot.png" alt="robot"/>
+                        <img src={sectionImage} alt="robot"/>
                     </div>
                 </div>
 

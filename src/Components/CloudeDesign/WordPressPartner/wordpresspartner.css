@@ -1,0 +1,24 @@
+
+.wordpress_wrapper{
+    padding: 0 20px 0;
+}
+
+.wordpress-container{
+    width: 100%;
+    height: 73vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.wordpress_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 60px;
+}

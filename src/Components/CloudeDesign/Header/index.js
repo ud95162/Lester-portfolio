@@ -5,11 +5,13 @@ import { useNavigate, useLocation } from 'react-router-dom';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [showHeader, setShowHeader] = useState(false);
+    const [activeNav, setActiveNav] = useState('/'); // State to track active navigation
     const navigate = useNavigate();
     const location = useLocation();
 
-    const handleNavigate = () => {
-        navigate('/contact-us');
+    const handleNavigate = (path) => {
+        setActiveNav(path);
+        navigate(path);
     };
 
     const toggleMenu = () => {
@@ -32,7 +34,10 @@ const Header = () => {
     }, []);
 
     // Conditionally render header based on route and scroll
-    if (location.pathname === '/' && !showHeader) {
+    if ((location.pathname === '/' ||
+            location.pathname === '/services'||
+            location.pathname === '/about' || location.pathname === '/careers')
+        && !showHeader) {
         return null; // Hide header
     }
 
@@ -49,18 +54,27 @@ const Header = () => {
                 </div>
 
                 {/* Menu Items */}
-                <ul className={`menu-items ${isMenuOpen ? 'show' : ''}`}>
-                    <li className="nav-item"><a href="/public">HOME</a></li>
-                    <li className="nav-item"><a href="/services">OUR SERVICES</a></li>
-                    <li className="nav-item"><a href="/careers">WORK WITH US</a></li>
-                    <li className="nav-item"><a href="/about">ABOUT US</a></li>
+                <ul className={`banner_menu-items ${isMenuOpen ? 'show' : ''}`}>
+                    <li className={`banner_nav-item ${activeNav === '/' ? 'active' : ''}`}>
+                        <a onClick={() => handleNavigate('/')}>HOME</a>
+                    </li>
+                    <li className={`banner_nav-item ${activeNav === '/services' ? 'active' : ''}`}>
+                        <a onClick={() => handleNavigate('/services')}>OUR SERVICES</a>
+                    </li>
+                    <li className={`banner_nav-item ${activeNav === '/careers' ? 'active' : ''}`}>
+                        <a onClick={() => handleNavigate('/careers')}>WORK WITH US</a>
+                    </li>
+                    <li className={`banner_nav-item ${activeNav === '/about' ? 'active' : ''}`}>
+                        <a onClick={() => handleNavigate('/about')}>ABOUT US</a>
+                    </li>
                     <li></li>
                 </ul>
 
                 {/* Get Template Button (visible on desktop only) */}
                 <div className="menu-items">
                     <div className="nav-item">
-                        <button className="header-button" style={{ cursor: "pointer" }} onClick={handleNavigate}>
+                        <button className="header-button" style={{cursor: "pointer"}}
+                                onClick={() => handleNavigate('/')}>
                             Talk to Us
                         </button>
                     </div>
