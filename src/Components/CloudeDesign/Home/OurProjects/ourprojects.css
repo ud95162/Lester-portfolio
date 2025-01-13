@@ -86,3 +86,18 @@
         display: none;
     }
 }
+
+.projects_image-container {
+    position: relative;
+    transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+}
+
+.projects_image-container.fade {
+    opacity: 0; /* Fades out the current image */
+}
+
+.projects_wrapper img {
+    max-width: 100%; /* Ensures the image fits within the width of the parent */
+    max-height: 100%; /* Ensures the image fits within the height of the parent */
+    object-fit: contain; /* Ensures the image scales proportionally without distortion */
+}

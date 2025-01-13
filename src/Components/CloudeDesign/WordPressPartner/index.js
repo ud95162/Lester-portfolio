@@ -13,20 +13,33 @@ const WordPressPartner = () => {
                     <div></div>
                     <div className="wordpress_content">
                         <h1 style={{margin: "0", color: "white"}}>
-                            YOUR TRUSTED&nbsp;
-                            <span
+
+                            <span  className="default-header" style={{
+                                color:"white",
+                                fontWeight: "600",
+                            }}>
+                                 YOUR TRUSTED
+                            </span>
+                            <span className="default-header"
                                 style={{
                                     background: "linear-gradient(to right, #ebb500, #ec5b12)",
                                     WebkitBackgroundClip: "text",
                                     WebkitTextFillColor: "transparent",
                                     fontWeight: "600",
-                                    fontSize: "48px",
-                                }}> WORDPRESS
+                                }}>
+                                <span  className="default-header" style={{
+                                    color:"white",
+                                    fontWeight: "600",
+                                }}> WORDPRESS </span>
                             </span>
                         </h1>
-                        <h1 style={{margin: "0", color: "white"}}>WEBSITE DESIGN PARTNER</h1>
-                        <div style={{marginTop: "20px"}}>
-                            <span style={{color: "white", fontSize: "12px"}}>
+                        <h1 style={{margin: "0", color: "white"}} className="header-gap">
+                          <span  className="default-header" style={{
+                            color:"white",
+                            fontWeight: "600",
+                          }}>WEBSITE DESIGN PARTNER</span></h1>
+                        <div className="gap">
+                            <span className="description">
                                 At Cloud-e-Design, we're passionate about helping small businesses succeed online.
                                 Our team of WordPress experts creates custom websites that not only look great,
                                 but are also search engine-friendly and fully optimized to boost your online visibility.

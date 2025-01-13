@@ -33,6 +33,11 @@ const Header = () => {
         };
     }, []);
 
+    useEffect(() => {
+        setActiveNav(location.pathname);
+    }, [location]);
+
+
     // Conditionally render header based on route and scroll
     if ((location.pathname === '/' ||
             location.pathname === '/services'||
