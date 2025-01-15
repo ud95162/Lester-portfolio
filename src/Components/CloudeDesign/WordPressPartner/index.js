@@ -33,7 +33,7 @@ const WordPressPartner = () => {
                                 }}> WORDPRESS </span>
                             </span>
                         </h1>
-                        <h1 style={{margin: "0", color: "white"}} className="header-gap">
+                        <h1 style={{ color: "white"}} className="header-gap">
                           <span  className="default-header" style={{
                             color:"white",
                             fontWeight: "600",

@@ -7,6 +7,25 @@
     background-repeat: no-repeat; /* Removed quotes */
     position: relative;
     overflow: hidden;
+    animation: shakeBackground 3s ease-in-out infinite;
+}
+
+@keyframes shakeBackground {
+    0% {
+        background-position: 50% 50%;
+    }
+    25% {
+        background-position: 54% 46%;
+    }
+    50% {
+        background-position: 46% 54%;
+    }
+    75% {
+        background-position: 52% 48%;
+    }
+    100% {
+        background-position: 50% 50%;
+    }
 }
 
 

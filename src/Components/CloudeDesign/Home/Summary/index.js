@@ -5,11 +5,12 @@ import React from "react";
 const Summary = ({breadcrumb,gradientHeader,defaultHeader,content,button,sectionImage}) => {
     return(
         <>
-            {breadcrumb ? <div style={{display: 'flex', justifyContent: 'center', paddingTop: "2rem"}}>
-                <span>HOME&nbsp;</span>
-                <img src="/cloudedesign/icons/right-simple-arrow.svg" alt="arrow" style={{width: '12px'}}/>
-                <span> &nbsp;{breadcrumb}</span>
-            </div>:""}
+            {breadcrumb ?
+                <div style={{display: 'flex', justifyContent: 'center', paddingTop: "2rem"}}>
+                    <span>HOME&nbsp;</span>
+                    <img src="/cloudedesign/icons/right-simple-arrow.svg" alt="arrow" style={{width: '12px'}}/>
+                    <span> &nbsp;{breadcrumb}</span>
+                </div>:""}
 
             <div className="summary_wrapper">
                 <div className="summary_body">

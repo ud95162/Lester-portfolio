@@ -84,7 +84,9 @@
     font-weight: 600;
     border: none;
 }
-
+.title{
+    font-size: 48px;
+}
 
 .banner_header-button-secondary{
     display: flex;
@@ -217,6 +219,9 @@
     /* Hide the Get Template Button on Mobile */
     .banner_header-button {
         display: none;
+    }
+    .title{
+        font-size: 35px;
     }
 
 }

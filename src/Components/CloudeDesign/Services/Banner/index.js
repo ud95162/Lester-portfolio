@@ -81,16 +81,15 @@ const ServiceBanner = ({ backgroundImage, defaultHeader, gradientHeader }) => {
 
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "end", height: "70vh" }}>
                     <div className="banner_header__title">
-                        <h1 style={{ color: "white", textAlign: "center" }}>
+                        <h1 style={{ color: "white", textAlign: "center" }} className="title">
                             {defaultHeader}&nbsp;
                             <span
                                 style={{
                                     background: "linear-gradient(to right, #ebb500, #ec5b12)",
                                     WebkitBackgroundClip: "text",
                                     WebkitTextFillColor: "transparent",
-                                    fontSize: "48px",
                                     fontWeight: "600",
-                                }}
+                                }} className="title"
                             >
                                 {gradientHeader}
                             </span>

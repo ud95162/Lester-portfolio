@@ -1,4 +1,5 @@
 import './App.css';
+import './summary.css';
 import Header from "./Components/CloudeDesign/Header";
 import {Route, Routes} from "react-router-dom";
 import Home from "./Components/CloudeDesign/Home";
