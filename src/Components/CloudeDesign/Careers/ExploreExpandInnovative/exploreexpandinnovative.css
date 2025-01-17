@@ -5,6 +5,9 @@
     gap: 20px;
 }
 
+.expolre-content{
+    height: 89vh;
+}
 
 .explore-title{
     display: flex;
@@ -87,4 +90,136 @@
     position: absolute;
     right: 5rem;
     top: 2rem;
+}
+
+@media (max-width: 1560px) {
+
+    .explore-title-text {
+        font-size: 155px;
+        line-height: 2;
+    }
+    .expand-title-text {
+        font-size: 155px;
+        line-height: 2;
+    }
+    .experience-title-text {
+        font-size: 155px;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .expolre-content{
+        height: 80vh;
+    }
+    
+}
+@media (max-width: 1218px) {
+    .explore-title-text {
+        font-size: 150px;
+        line-height: 2;
+    }
+    .expand-title-text{
+        font-size: 150px;
+        line-height: 2;
+    }.experience-title-text{
+        font-size: 150px;
+        line-height: 2;
+    }
+
+}
+@media (max-width: 1080px) {
+    .explore-title-text {
+        font-size: 120px;
+        line-height: 2;
+    }
+    .expand-title-text{
+        font-size: 120px;
+        line-height: 2;
+    }
+    .experience-title-text{
+        font-size: 120px;
+        line-height: 2;
+    }
+
+
+
+    .expolre-content{
+        height: 70vh;
+    }
+
+}
+@media (max-width: 768px) {
+    .explore-title-text {
+        font-size: 80px;
+        line-height: 1;
+    }
+    .expand-title-text{
+        font-size: 80px;
+        line-height: 1;
+    }
+    .experience-title-text{
+        font-size: 80px;
+        line-height: 1;
+    }
+
+
+    .expolre-content{
+        height: 60vh;
+    }
+    .explore-description {
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .explore-title-text {
+        font-size: 70px;
+        line-height: 1;
+    }
+
+    .expand-title-text {
+        font-size: 70px;
+        line-height: 1;
+    }
+
+    .experience-title-text {
+        font-size: 60px;
+        line-height: 1;
+    }
+
+    .explore-title {
+        padding: 0;
+    }
+
+    .expand-title {
+        padding: 0;
+    }
+
+    .experience-title {
+        padding: 0;
+    }
+
+    .explore-content {
+        padding: 20px 50px;
+    }
+
+    .expand-content {
+        padding: 90px 50px;
+    }
+
+    .experience-connect {
+        padding: 0;
+    }
+
+    .expolre-content {
+        height: 40vh;
+    }
+
+    .explore-description {
+        font-size: 12px;
+        width: 100%;
+    }
 }

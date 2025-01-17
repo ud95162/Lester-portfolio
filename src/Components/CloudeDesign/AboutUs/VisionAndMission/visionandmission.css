@@ -4,6 +4,10 @@
     padding: 50px 10px;
     gap: 20px;
 }
+.visionmission-content-container{
+    height: 89vh;
+}
+
 
 .visionmission-title{
     display: flex;
@@ -32,3 +36,45 @@
     color: white;
 }
 
+
+@media (max-width: 1400px) {
+    .visionmission-content-container{
+
+        height: 80vh;
+    }
+    
+}
+
+
+@media (max-width: 1080px) {
+    .visionmission-content-container{
+        height: 50vh;
+    }
+    .title-text{
+        font-size: 150px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title-text{
+        font-size: 120px;
+    }
+    
+}
+@media (max-width: 480px) {
+    .visionmission-content-container{
+        height: 50vh;
+    }
+    .title-text{
+        font-size: 60px;
+    }
+    .visionmission-description{
+        width: 85%;
+        font-size: 10px;
+    }
+    .visionmission-content{
+        padding: 10px 30px;
+    }
+
+}
