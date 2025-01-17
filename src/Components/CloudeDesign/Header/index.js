@@ -12,6 +12,8 @@ const Header = () => {
     const handleNavigate = (path) => {
         setActiveNav(path);
         navigate(path);
+        window.scrollTo(0, 0); // Reset scroll position to top
+
     };
 
     const toggleMenu = () => {
@@ -73,14 +75,22 @@ const Header = () => {
                     <li className={`banner_nav-item ${activeNav === '/about' ? 'active' : ''}`}>
                         <a onClick={() => handleNavigate('/about')}>ABOUT US</a>
                     </li>
+                    <li className={`banner_nav-item ${activeNav === '/contact' ? 'active' : ''}`}>
+                        <a onClick={() => handleNavigate('/contact')}>CONTACT US</a>
+                    </li>
                     <li></li>
                 </ul>
 
                 {/* Get Template Button (visible on desktop only) */}
                 <div className="menu-items">
                     <div className="nav-item">
-                        <button className="header-button" style={{cursor: "pointer"}}
-                                onClick={() => handleNavigate('/contact')}>
+                    <button className="header-button" style={{cursor: "pointer"}}
+                            onClick={() =>
+                                window.open(
+                                    'https://wa.me/+94705894780?text=Hi%20there!%20I%20would%20like%20to%20talk%20to%20you.',
+                                    '_blank'
+                                )
+                            }>
                             Talk to Us
                         </button>
                     </div>
