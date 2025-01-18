@@ -28,12 +28,13 @@ const Process = () => {
                     <div className="process-card-right_wrapper">
                         <div className="process-card-right_wrapper-body">
                             <div className="process-card_content">
-                                <h2>Product Analysis</h2>
+                                <h2>Strategic Analysis</h2>
                                 <span>
-                            We provide business analysis, market insights, and tailored solutions to meet your goals.
-                            Our process ensures clear goals, actionable plans, and accurate cost estimates.
+                                Uncover opportunities with in-depth business evaluations and market insights. 
+                                We craft custom strategies to align with your vision and goals, setting the foundation for success.
                         </span>
-                                <button className="read-more-btn">Read More</button>
+                        <button className="read-more-btn" onClick={() => window.location.href = '/contact'}>Contact Us</button>
+                                
                             </div>
                         </div>
                         <img src="/cloudedesign/ourprocess/analysis.png" alt="Product Analysis"
@@ -45,12 +46,13 @@ const Process = () => {
                     <div className="process-card-right_wrapper">
                         <div className="process-card-right_wrapper-body">
                             <div className="process-card_content">
-                                <h2>Product Planing</h2>
+                                <h2>Tailored Planning</h2>
                                 <span>
-                            We provide business analysis, market insights, and tailored solutions to meet your goals.
-                            Our process ensures clear goals, actionable plans, and accurate cost estimates.
+                                Turn ideas into actionable plans with our product-focused roadmaps. 
+                                From concept to execution, we ensure every detail aligns with your objectives and market demands.
                         </span>
-                                <button className="read-more-btn">Read More</button>
+                        <button className="read-more-btn" onClick={() => window.location.href = '/contact'}>Contact Us</button>
+                                
                             </div>
                         </div>
                         <img src="/cloudedesign/ourprocess/planning.png" alt="Product Analysis"
@@ -66,12 +68,13 @@ const Process = () => {
                     <div className="process-card-right_wrapper">
                         <div className="process-card-left_wrapper-body">
                             <div className="process-card-left_content">
-                                <h2>Product Delivery</h2>
+                                <h2>Sustained Growth</h2>
                                 <span>
-                            With meticulous planning & top-level security, we ensure timely delivery and high-quality results.
-                Real-time updates keep you informed every step of the way.
+                                Ensure long-term success with our dedicated support and maintenance.
+                                 We help optimize performance, address challenges, and adapt to evolving needs.
                         </span>
-                                <button className="read-more-btn">Read More</button>
+                               
+                                <button className="read-more-btn" onClick={() => window.location.href = '/contact'}>Contact Us</button>
                             </div>
                         </div>
                         <img src="/cloudedesign/ourprocess/delivery.png" alt="Product Analysis"
@@ -86,12 +89,13 @@ const Process = () => {
                     <div className="process-card-right_wrapper">
                         <div className="process-card-left_wrapper-body">
                             <div className="process-card-left_content" style={{width: "55%"}}>
-                                <h2>Support & Maintenance</h2>
+                                <h2>Seamless Delivery</h2>
                                 <span>
-                            Our support ensures seamless functionality with quick assistance and flexible packages.
-                The Premium package covers 95% of technical issues for reliable support.
+                                Bring your vision to life with our streamlined delivery process. We focus on quality, 
+                                efficiency, and precision to ensure your product exceeds expectations.
                         </span>
-                                <button className="read-more-btn">Read More</button>
+                        <button className="read-more-btn" onClick={() => window.location.href = '/contact'}>Contact Us</button>
+                                
                             </div>
                         </div>
                         <img src="/cloudedesign/ourprocess/support.png" alt="Support"

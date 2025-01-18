@@ -16,6 +16,7 @@ const Home = () => {
                      content="We specialize in design, marketing, and technology to help business grow & thrive.
                      Our innovative solutions bridge creativity and strategy for impactful results."
                      button={"About CloudeDesign"}
+                     buttonLink={"/about"}
                      sectionImage={"/cloudedesign/robot.png"}></Summary>
             <WhatWeDo></WhatWeDo>
             <Process></Process>

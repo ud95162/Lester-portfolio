@@ -9,11 +9,14 @@ import Service from "./Service";
 const Services = () => {
     const summarySectionContent = [
         {
-            content: "At our core, we believe that every business is unique, and so are its challenges. " +
-                "That's why we specialize in creating bespoke software solutions designed to meet " +
-                "the specific needs of your brand. As a leading software development company in Sri Lanka, " +
-                "we're committed to delivering innovative, sustainable, " +
-                "and practical solutions to help your business thrive in today's fast-paced digital world."
+            content: "We design and deliver custom software solutions using React and Next.js, ensuring innovation," + 
+            "scalability, and efficiency. With a focus on industry best practices, we help businesses in Sri Lanka and beyond thrive in today’s digital world." +
+             "Every business is unique, and so are its challenges. Our team takes the time to understand your goals, " +
+            "crafting tailored solutions that optimize operations, achieve objectives, and unlock new opportunities. " +
+            "By leveraging modern technologies, we ensure your software is secure, sustainable, and future-ready. " +
+           "Whether you're a startup or an established corporation, our expertise transforms challenges into growth" + 
+           "opportunities. Let’s build software that drives your business forward and sets you apart in a competitive landscape. Your success is our mission! " 
+                
         },
         {
             content: "Many businesses underestimate the power of customized software," +
@@ -42,7 +45,7 @@ const Services = () => {
             <SectionSummary
                 breadcrumb="OUR SERVICES"
                 gradientHeader="CUSTOMIZED"
-                defaultHeader="SOFTWARE SOLUTIONS TAILORED TO YOUR BUSINESS"
+                defaultHeader="SOLUTIONS WITH React & Nextjs"
                 sectionImage="/cloudedesign/service-robot.png"
                 content={summarySectionContent}
             />

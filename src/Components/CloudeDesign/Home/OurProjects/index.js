@@ -5,10 +5,21 @@ const OurProjects = () => {
     // Array of project images (replace with your actual project data)
     const projects = [
         "/cloudedesign/ourprojects/projects-01.png",
+        "/cloudedesign/ourprojects/playhouse.png",
+        "/cloudedesign/ourprojects/laptopcare.png",
+        "/cloudedesign/ourprojects/geegstore.png",
+        "/cloudedesign/ourprojects/studiocloudy.png",
+        "/cloudedesign/ourprojects/mymedweb.png",
+        "/cloudedesign/ourprojects/poolguard.png",
+        "/cloudedesign/ourprojects/tc.png",
         "/cloudedesign/ourprojects/projects-02.png",
         "/cloudedesign/ourprojects/projects-03.png",
-        "/cloudedesign/ourprojects/projects-04.png",
         "/cloudedesign/ourprojects/projects-05.png",
+        "/cloudedesign/ourprojects/miracalagro.png",
+        "/cloudedesign/ourprojects/exsolproject.png",
+        "/cloudedesign/ourprojects/kemyo2.png",
+        "/cloudedesign/ourprojects/sennya.png",
+        
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0); // State for current project index
@@ -45,6 +56,7 @@ const OurProjects = () => {
 
     return (
         <>
+        
             <div className="projects_container">
                 <div className="projects_header">
                     <h3 style={{ margin: 0, color: "white" }}>Our Recent Projects</h3>

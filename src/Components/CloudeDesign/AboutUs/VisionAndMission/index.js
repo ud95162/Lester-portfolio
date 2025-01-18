@@ -20,9 +20,8 @@ const VisionAndMission = () => {
 
                         <div className="visionmission-content">
                         <span className="visionmission-description">
-                            Were dedicated to driving continuous innovation.
-                            By combining advanced software development with strategic consulting,
-                            we deliver powerful solutions that maximize business potential and promote sustainable growth.
+                        We envision empowering businesses to thrive in a connected world through cutting-edge design, 
+                        intelligent development, and sustainable digital solutions that inspire growth and redefine possibilities.
                         </span>
                         </div>
                     </div>
@@ -44,13 +43,8 @@ const VisionAndMission = () => {
 
                         <div className="visionmission-content">
                         <span className="visionmission-description">
-                            Our mission is to empower businesses with custom-built,
-                            scalable technology solutions tailored to their unique needs.
-                            Through services like Custom Web App Development,
-                            Word-Press Development, E-Commerce Development, Business Process Automation,
-                            and Custom Business Portals, we build.
-                            lasting partnerships with our clients,
-                            fueled by industry expertise and a relentless commitment to excellence.
+                        Our mission is to empower businesses by delivering cutting-edge web design and development solutions that prioritize innovation, user experience, and sustainability. 
+                        We are committed to creating digital platforms that drive growth, foster meaningful connections, and adapt to the ever-evolving needs of the connected world.
                         </span>
                         </div>
                     </div>

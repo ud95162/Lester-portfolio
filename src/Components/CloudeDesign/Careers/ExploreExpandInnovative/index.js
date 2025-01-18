@@ -47,9 +47,9 @@ const ExploreExpandInnovative = () => {
 
                         <div className="expand-content">
                             <span className="explore-description">
-                                Your brand isn't just a name, its an experience. We explore design to shape the way
-                                people experience your brand, and influence what its stand for in the hearts and
-                                minds of customers.
+                            We help your brand expand by creating innovative strategies that open doors to new opportunities. 
+                            From scaling your business to reaching untapped audiences, 
+                            we’re here to empower your vision and turn possibilities into reality.
                             </span>
                         </div>
                     </div>
@@ -67,7 +67,9 @@ const ExploreExpandInnovative = () => {
                     <div>
                         <div className="experience-connect">
                             <span className="experience-description">
-                                Reach Out, Let's Connect!
+                            We create experiences that captivate and inspire, 
+                            leaving lasting impressions on your audience. By blending creativity and strategy, 
+                            we craft immersive experiences that connect emotionally, reinforce loyalty, and elevate your brand to new heights.
                             </span>
                             <button className='summary_about-btn' style={{cursor: "pointer", position: "absolute", right: "0"}}>
                                 Contact Us

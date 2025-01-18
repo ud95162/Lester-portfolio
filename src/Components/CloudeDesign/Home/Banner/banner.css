@@ -7,7 +7,7 @@
     background-repeat: no-repeat; /* Removed quotes */
     position: relative;
     overflow: hidden;
-    animation: shakeBackground 3s ease-in-out infinite;
+    /* animation: shakeBackground 3s ease-in-out infinite; */
 }
 
 @keyframes shakeBackground {
