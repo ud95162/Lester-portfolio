@@ -2,25 +2,84 @@ import './ourprojects.css';
 import React, { useState, useEffect } from "react";
 
 const OurProjects = () => {
-    // Array of project images (replace with your actual project data)
+
     const projects = [
-        "/cloudedesign/ourprojects/projects-01.png",
-        "/cloudedesign/ourprojects/playhouse.png",
-        "/cloudedesign/ourprojects/laptopcare.png",
-        "/cloudedesign/ourprojects/geegstore.png",
-        "/cloudedesign/ourprojects/studiocloudy.png",
-        "/cloudedesign/ourprojects/mymedweb.png",
-        "/cloudedesign/ourprojects/poolguard.png",
-        "/cloudedesign/ourprojects/tc.png",
-        "/cloudedesign/ourprojects/projects-02.png",
-        "/cloudedesign/ourprojects/projects-03.png",
-        "/cloudedesign/ourprojects/projects-05.png",
-        "/cloudedesign/ourprojects/miracalagro.png",
-        "/cloudedesign/ourprojects/exsolproject.png",
-        "/cloudedesign/ourprojects/kemyo2.png",
-        "/cloudedesign/ourprojects/sennya.png",
-        
-    ];
+        {
+            image: "/cloudedesign/ourprojects/projects-01.png",
+            description: "We showcase a portfolio of successful projects highlighting our expertise and impactful solutions",
+            url: "https://metroplus.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/playhouse.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/laptopcare.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/geegstore.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/studiocloudy.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/mymedweb.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/poolguard.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/tc.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/projects-02.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/projects-03.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/projects-05.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/miracalagro.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/exsolproject.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/kemyo2.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/sennya.png",
+            description: "Project description",
+            url: "https://playhouse.lk"
+        }
+    ]
 
     const [currentIndex, setCurrentIndex] = useState(0); // State for current project index
     const [isAnimating, setIsAnimating] = useState(false); // State to control animation
@@ -100,7 +159,7 @@ const OurProjects = () => {
                                 isAnimating ? "fade" : ""
                             }`} // Add fade animation
                         >
-                            <img src={projects[currentIndex]} alt={`proj-${currentIndex + 1}`} />
+                            <img src={projects[currentIndex].image} alt={`proj-${currentIndex + 1}`} />
                         </div>
 
                         {/* Right Arrow */}
@@ -118,14 +177,14 @@ const OurProjects = () => {
 
                     <div className="projects-bottom-span">
                         <span className="projects-bottom-span-text">
-                            We showcase a portfolio of successful projects highlighting
-                            our expertise and impactful solutions
+                            {projects[currentIndex].description}
                         </span>
                         <button
                             className="summary_about-btn"
                             style={{ cursor: "pointer", marginTop: "0" }}
+                            onClick={() => window.open(projects[currentIndex].url, '_blank', 'noopener,noreferrer')}
                         >
-                            More Stories
+                            Explore
                         </button>
                     </div>
                 </div>
