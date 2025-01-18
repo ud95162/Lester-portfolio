@@ -43,12 +43,14 @@
     .default-header{
         font-size: 35px;
     }
+    .header-gap{
+        margin: 0;
+        /*line-height: 0;*/
+    }
 
 }
 @media (max-width: 1028px) {
-    .wordpress-container{
-        height: fit-content;
-    }
+
 
     .default-header{
         font-size:28px ;
@@ -60,6 +62,7 @@
         font-size: 9px;
     }
     .header-gap{
+        margin: 0;
         line-height: 0;
     }
     .wordpress_content{
@@ -68,6 +71,9 @@
 }
 
 @media (max-width: 768px) {
+    .wordpress_wrapper{
+        display: none;
+    }
     .wordpress-container{
         display: flex;
         /*height: 60vh;*/

@@ -8,11 +8,10 @@ const ExploreExpandInnovative = () => {
                 {/*explore section*/}
                 <div style={{
                     backgroundImage: `url('./cloudedesign/workwithus/Explore.png')`,
-                    backgroundSize: "contain",
+                    backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
-                    height: "89vh"
-                }}>
+                }} className="expolre-content">
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <div className="explore-title">
                             <h1 className="explore-title-text">
@@ -33,11 +32,10 @@ const ExploreExpandInnovative = () => {
                 {/*expand section*/}
                 <div style={{
                     backgroundImage: `url('./cloudedesign/workwithus/Expand.png')`,
-                    backgroundSize: "contain",
+                    backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
-                    height: "89vh"
-                }}>
+                }} className="expolre-content">
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <div className="expand-title">
                             <h1 className="expand-title-text">
@@ -58,12 +56,11 @@ const ExploreExpandInnovative = () => {
                 {/*experience section*/}
                 <div style={{
                     backgroundImage: `url('./cloudedesign/workwithus/Experence.png')`,
-                    backgroundSize: "contain",
+                    backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                     position: "relative",
-                    height: "89vh"
-                }}>
+                }} className="expolre-content">
                     <div>
                         <div className="experience-connect">
                             <span className="experience-description">

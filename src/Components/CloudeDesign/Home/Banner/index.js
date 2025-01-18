@@ -82,6 +82,9 @@ const Banner = () => {
                                 <li className={`banner_nav-item ${activeNav === '/about' ? 'active' : ''}`}>
                                     <a onClick={() => handleNavigate('/about')}>ABOUT US</a>
                                 </li>
+                                <li className={`banner_nav-item ${activeNav === '/contact' ? 'active' : ''}`}>
+                                    <a onClick={() => handleNavigate('/conatct')}>CONTACT US</a>
+                                </li>
                                 <li></li>
                             </ul>
 
@@ -89,7 +92,12 @@ const Banner = () => {
                             <div className="banner_menu-items">
                                 <div className="banner_nav-item">
                                     <button className='banner_header-button' style={{cursor: "pointer"}}
-                                            onClick={() => handleNavigate('/contact')}>Talk to Us
+                                            onClick={() =>
+                                                window.open(
+                                                    'https://wa.me/+94705894780?text=Hi%20there!%20I%20would%20like%20to%20talk%20to%20you.',
+                                                    '_blank'
+                                                )
+                                            }>Talk to Us
                                     </button>
                                 </div>
                             </div>

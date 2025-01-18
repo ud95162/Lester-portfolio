@@ -13,6 +13,9 @@
     margin: 0 auto; /* Center the div horizontally */
     width: 50%; /* Optional: Restrict the width */
 }
+.project_header{
+    font-size: 48px;
+}
 
 .projects_wrapper {
     display: grid;
@@ -84,6 +87,9 @@
 @media (max-width: 648px) {
     .projects-bottom-span{
         display: none;
+    }
+    .project_header{
+        font-size: 35px;
     }
 }
 

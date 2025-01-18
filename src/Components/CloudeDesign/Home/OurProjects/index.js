@@ -26,13 +26,13 @@ const OurProjects = () => {
     const [isAnimating, setIsAnimating] = useState(false); // State to control animation
 
     // Handle automatic transitions
-    useEffect(() => {
-        const interval = setInterval(() => {
-            handleNextProject();
-        }, 3000); // Change project every 3 seconds
-
-        return () => clearInterval(interval); // Clear interval on unmount
-    }, []);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         handleNextProject();
+    //     }, 3000); // Change project every 3 seconds
+    //
+    //     return () => clearInterval(interval); // Clear interval on unmount
+    // }, []);
 
     const handleNextProject = () => {
         setIsAnimating(true); // Trigger animation
@@ -60,7 +60,7 @@ const OurProjects = () => {
             <div className="projects_container">
                 <div className="projects_header">
                     <h3 style={{ margin: 0, color: "white" }}>Our Recent Projects</h3>
-                    <h1 style={{ marginTop: "10px", color: "white" }}>
+                    <h1 style={{ marginTop: "10px", color: "white" }} className='project_header'>
                         OUR SUCCESS&nbsp;
                         <span
                             style={{
@@ -68,8 +68,7 @@ const OurProjects = () => {
                                 WebkitBackgroundClip: "text",
                                 WebkitTextFillColor: "transparent",
                                 fontWeight: "600",
-                                fontSize: "48px",
-                            }}
+                            }} className='project_header'
                         >
                             STORIES
                         </span>

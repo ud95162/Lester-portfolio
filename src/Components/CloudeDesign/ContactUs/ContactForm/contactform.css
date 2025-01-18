@@ -50,3 +50,17 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
+
+@media (max-width: 968px) {
+    .contact-form_wrapper {
+        padding: 150px 50px 100px;
+        grid-template-columns: 1fr;
+    }
+    .contact-email{
+        justify-content: center;
+    }
+    .contact-details{
+        text-align: center;
+    }
+
+}

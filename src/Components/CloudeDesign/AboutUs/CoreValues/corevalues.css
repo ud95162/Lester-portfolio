@@ -29,3 +29,34 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+@media (max-width: 768px) {
+    .valueContent{
+        grid-template-columns: 1fr;
+    }
+    .service__right-content-card__content{
+        grid-row: 1;
+    }.service__right-content-card__body{
+         grid-template-columns: 2fr 1fr;
+     }
+
+}
+
+@media (max-width: 480px) {
+    .service__left-content-card{
+        grid-template-columns: 1fr;
+    }
+    .service__left-content-card__content{
+        padding: 20px;
+        text-align: center;
+    }
+    .service__right-content-card__body{
+        grid-template-columns: 1fr;
+    }
+    .service__right-content-card__content{
+        grid-row: 1;
+        text-align: center;
+        padding: 20px;
+    }
+
+}

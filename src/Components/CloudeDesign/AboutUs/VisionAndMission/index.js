@@ -6,11 +6,10 @@ const VisionAndMission = () => {
             <div className='visionmission-container'>
                 <div style={{
                     backgroundImage: `url('./cloudedesign/aboutus/Vision.png')`,
-                    backgroundSize: "contain",
+                    backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
-                    height:"89vh"
-                }}>
+                }} className="visionmission-content-container">
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <div className="visionmission-title">
                             <h1 className="title-text">
@@ -29,11 +28,10 @@ const VisionAndMission = () => {
 
                 <div style={{
                     backgroundImage: `url('./cloudedesign/aboutus/Mission.png')`,
-                    backgroundSize: "contain",
+                    backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
-                    height:"89vh"
-                }}>
+                }} className="visionmission-content-container">
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <div className="visionmission-title">
                             <h1 className="title-text">

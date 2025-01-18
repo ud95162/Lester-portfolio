@@ -176,4 +176,8 @@
     .card-image_left{
         width: 100%;
     }
+    .process-card_container{
+        padding: 50px 30px;
+    }
+
 }
