@@ -68,9 +68,9 @@ const ExploreExpandInnovative = () => {
                             leaving lasting impressions on your audience. By blending creativity and strategy, 
                             we craft immersive experiences that connect emotionally, reinforce loyalty, and elevate your brand to new heights.
                             </span>
-                            <button className='summary_about-btn' style={{cursor: "pointer", position: "absolute", right: "0"}}>
-                                Contact Us
-                            </button>
+                            {/*<button className='summary_about-btn' style={{cursor: "pointer", position: "absolute", right: "0"}}>*/}
+                            {/*    Contact Us*/}
+                            {/*</button>*/}
                         </div>
                         <div className="experience-title">
                             <h1 className="experience-title-text">

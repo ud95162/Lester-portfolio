@@ -90,6 +90,7 @@
     position: absolute;
     right: 5rem;
     top: 2rem;
+    left: 5rem;
 }
 
 @media (max-width: 1560px) {
