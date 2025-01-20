@@ -10,6 +10,11 @@ const OurProjects = () => {
             url: "https://metroplus.lk"
         },
         {
+            image: "/cloudedesign/ourprojects/ipermit_.png",
+            description: "Ipermit Ltd delivers innovative company web provide web design service for coporate needs.",
+            url: "https://www.ipermitusa.com/"
+        },
+        {
             image: "/cloudedesign/ourprojects/playhouse.png",
             description: "PlayHouse.org offers professional website development and seamless registration systems to streamline your organization's online presence and user management.",
             url: "https://playhouse.lk"
@@ -41,8 +46,8 @@ const OurProjects = () => {
         },
         {
             image: "/cloudedesign/ourprojects/tc.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "We provide web design services for Trafford Ceylon (Pvt) Ltd, a Sri Lankan tea export company with operations in the USA, creating elegant and professional websites to showcase their global presence.",
+            url: "https://traffordceylon.lk/"
         },
         {
             image: "/cloudedesign/ourprojects/projects-02.png",
@@ -61,18 +66,23 @@ const OurProjects = () => {
         },
         {
             image: "/cloudedesign/ourprojects/miracalagro.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "We provide corporate website solutions for Miracal Agro (Pvt) Ltd, a leading company in Sri Lanka's agriculture sector, delivering a professional online presence to enhance their brand and operations.",
+            url: "https://miracleagro.lk/"
         },
         {
             image: "/cloudedesign/ourprojects/exsolproject.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "We provide web design and development services for Exsol (Pvt) Ltd, an engineering company in Sri Lanka, creating innovative and functional websites to enhance their digital presence.",
+            url: "https://exsol.lk"
         },
         {
             image: "/cloudedesign/ourprojects/kemyo2.png",
+            description: "We provide web design and development services for Kemyo (Pvt) Ltd, an architecture company, creating visually striking and functional websites to showcase their expertise and projects.",
+            url: "https://kemyo.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/spicyproject.png",
             description: "Project description",
-            url: "https://playhouse.lk"
+            url: "https://spicesusa.com/"
         },
         {
             image: "/cloudedesign/ourprojects/sennya.png",
