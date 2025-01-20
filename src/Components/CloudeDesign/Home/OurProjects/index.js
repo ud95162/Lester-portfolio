@@ -65,7 +65,7 @@ const OurProjects = () => {
             url: "https://playhouse.lk"
         },
         {
-            image: "/cloudedesign/ourprojects/miracalagro.png",
+            image: "/cloudedesign/ourprojects/miracalagroproject.png",
             description: "We provide corporate website solutions for Miracal Agro (Pvt) Ltd, a leading company in Sri Lanka's agriculture sector, delivering a professional online presence to enhance their brand and operations.",
             url: "https://miracleagro.lk/"
         },
@@ -86,8 +86,8 @@ const OurProjects = () => {
         },
         {
             image: "/cloudedesign/ourprojects/sennya.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "We provide web design and comprehensive digital marketing solutions for Sennya Resort (Pvt) Ltd, a luxury resort in Belihuloya, Sri Lanka, enhancing their online presence and guest engagement.",
+            url: "https://sennyaresorts.com/"
         }
     ]
 
