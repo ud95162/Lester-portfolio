@@ -6,38 +6,38 @@ const OurProjects = () => {
     const projects = [
         {
             image: "/cloudedesign/ourprojects/projects-01.png",
-            description: "We showcase a portfolio of successful projects highlighting our expertise and impactful solutions",
+            description: "Metro Pulse (Pvt) Ltd delivers innovative tech products and services in Sri Lanka, specializing in web design, development, and e-commerce solutions tailored to your business needs.",
             url: "https://metroplus.lk"
         },
         {
             image: "/cloudedesign/ourprojects/playhouse.png",
-            description: "Project description",
+            description: "PlayHouse.org offers professional website development and seamless registration systems to streamline your organization's online presence and user management.",
             url: "https://playhouse.lk"
         },
         {
             image: "/cloudedesign/ourprojects/laptopcare.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "Laptop Care (Pvt) Ltd provides cutting-edge tech solutions in Sri Lanka, specializing in laptop services, SEO optimization, Google search ad campaigns, web design, and e-commerce solutions to elevate your business.",
+            url: "https://laptopcare.lk"
         },
         {
             image: "/cloudedesign/ourprojects/geegstore.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "Geegstore specializes in web design, development, and tailored e-commerce solutions to help businesses thrive in the digital marketplace.",
+            url: "https://geegstore.lk"
         },
         {
             image: "/cloudedesign/ourprojects/studiocloudy.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "Studio Cloudy offers professional web design and development services tailored for wedding photographers, creating stunning, user-friendly websites to showcase your work beautifully.",
+            url: "https://studiocloudy.com/"
         },
         {
             image: "/cloudedesign/ourprojects/mymedweb.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "We provide tailored e-commerce web solutions for MyMed (Pvt) Ltd, enabling seamless online operations and enhanced customer experiences.",
+            url: "https://mymed.lk"
         },
         {
             image: "/cloudedesign/ourprojects/poolguard.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "We provide web development solutions for Poolguard.au.co, an Australian pool service company based in Western Australia, ensuring a professional online presence and user-friendly functionality.",
+            url: "https://poolguardwa.com.au/"
         },
         {
             image: "/cloudedesign/ourprojects/tc.png",
