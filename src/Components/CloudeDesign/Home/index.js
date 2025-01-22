@@ -11,7 +11,8 @@ const Home = () => {
 
     return (<>
             <Banner></Banner>
-            <Summary gradientHeader={"ELEVATING"}
+            {/*<Summary gradientHeader={"ELEVATING"}*/}
+            <Summary gradientHeader={"ELEVATE"}
                      defaultHeader={"BRANDS THROUGH DESIGN, MARKETING, & TECHNOLOGY"}
                      content="We specialize in design, marketing, and technology to help business grow & thrive.
                      Our innovative solutions bridge creativity and strategy for impactful results."
