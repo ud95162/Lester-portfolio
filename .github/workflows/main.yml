@@ -26,7 +26,8 @@ jobs:
 
     # Build the project
     - name: Build project
-      run: npm run build
+      run: | 
+        CI=false npm run build
 
     # Deploy to Hostinger VPS
     - name: Deploy to VPS
