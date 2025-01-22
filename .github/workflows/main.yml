@@ -1,0 +1,43 @@
+name: React CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the code
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Set up Node.js
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '22'
+
+    # Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Build the project
+    - name: Build project
+      run: npm run build
+
+    # Deploy to Hostinger VPS
+    - name: Deploy to VPS
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SERVER_HOST: ${{ secrets.SERVER_HOST }}
+        SERVER_USER: ${{ secrets.SERVER_USER }}
+        SERVER_PATH: ${{ secrets.SERVER_PATH }}
+      run: |
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan $SERVER_HOST >> ~/.ssh/known_hosts
+        scp -r ./build/* $SERVER_USER@$SERVER_HOST:$SERVER_PATH
