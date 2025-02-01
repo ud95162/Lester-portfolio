@@ -83,7 +83,7 @@ const Banner = () => {
                                     <a onClick={() => handleNavigate('/about')}>ABOUT US</a>
                                 </li>
                                 <li className={`banner_nav-item ${activeNav === '/contact' ? 'active' : ''}`}>
-                                    <a onClick={() => handleNavigate('/conatct')}>CONTACT US</a>
+                                    <a onClick={() => handleNavigate('/contact')}>CONTACT US</a>
                                 </li>
                                 <li></li>
                             </ul>
