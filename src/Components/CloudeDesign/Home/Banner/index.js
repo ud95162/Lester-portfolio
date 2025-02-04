@@ -134,14 +134,28 @@ const Banner = () => {
                             </button>
                         </div>
 
+                        <div className="banner-wrapper">
+                            <div className="banner_sub-sections">
+                                <div className="image-container">
+                                    <img src="/cloudedesign/homedesign.png" alt="design"/>
+                                </div>
+                                <div className="image-container">
+                                    <img src="/cloudedesign/homemarketing.png" alt="design"/>
+                                </div>
+                                <div className="image-container">
+                                    <img src="/cloudedesign/hometechnology.png" alt="design"/>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div className="banner_footer">
+                <div className="banner_footer"  style={{ bottom: showHeader ? "0px" : "40px" }}>
                     {imageList && imageList.length > 0 && (
                         <div className="image-ticker">
                             <div className="image-track">
-                                {imageList.map((item, index) => {
+                            {imageList.map((item, index) => {
                                     return (
                                         <img src={item} alt={item}/>
                                     )
