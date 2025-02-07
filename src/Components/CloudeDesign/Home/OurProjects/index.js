@@ -1,9 +1,10 @@
 import './ourprojects.css';
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect, useMemo} from "react";
 
 const OurProjects = () => {
 
-    const projects = [
+    const projects = useMemo( () =>
+    [
         {
             image: "/cloudedesign/ourprojects/projects-01.png",
             description: "Metro Pulse (Pvt) Ltd delivers innovative tech products and services in Sri Lanka, specializing in web design, development, and e-commerce solutions tailored to your business needs.",
@@ -89,43 +90,60 @@ const OurProjects = () => {
             description: "We provide web design and comprehensive digital marketing solutions for Sennya Resort (Pvt) Ltd, a luxury resort in Belihuloya, Sri Lanka, enhancing their online presence and guest engagement.",
             url: "https://sennyaresorts.com/"
         }
-    ]
+    ], []);
 
-    const [currentIndex, setCurrentIndex] = useState(0); // State for current project index
-    const [isAnimating, setIsAnimating] = useState(false); // State to control animation
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isAnimating, setIsAnimating] = useState(false);
 
-    // Handle automatic transitions
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         handleNextProject();
-    //     }, 3000); // Change project every 3 seconds
-    //
-    //     return () => clearInterval(interval); // Clear interval on unmount
-    // }, []);
+    // Preload all images when the component mounts
+    useEffect(() => {
+        projects.forEach((project) => {
+            const img = new Image();
+            img.src = project.image;
+        });
+    }, []);
+
+    const preloadImage = (index) => {
+        const img = new Image();
+        img.src = projects[index].image;
+    };
 
     const handleNextProject = () => {
-        setIsAnimating(true); // Trigger animation
+        setIsAnimating(true);
+        const nextIndex = currentIndex === projects.length - 1 ? 0 : currentIndex + 1;
+
+        preloadImage(nextIndex); // Preload next image
+
         setTimeout(() => {
-            setCurrentIndex((prevIndex) =>
-                prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-            );
-            setIsAnimating(false); // Reset animation after transition
-        }, 0); // Match transition duration
+            setCurrentIndex(nextIndex);
+            setIsAnimating(false);
+        }, 0);
     };
 
     const handlePreviousProject = () => {
-        setIsAnimating(true); // Trigger animation
+        setIsAnimating(true);
+        const prevIndex = currentIndex === 0 ? projects.length - 1 : currentIndex - 1;
+
+        preloadImage(prevIndex); // Preload previous image
+
         setTimeout(() => {
-            setCurrentIndex((prevIndex) =>
-                prevIndex === 0 ? projects.length - 1 : prevIndex - 1
-            );
-            setIsAnimating(false); // Reset animation after transition
-        }, 0); // Match transition duration
+            setCurrentIndex(prevIndex);
+            setIsAnimating(false);
+        }, 0);
     };
+
+    const currentProjectImage = useMemo(() => {
+        return (
+            <img
+                src={projects[currentIndex].image}
+                alt={`proj-${currentIndex + 1}`}
+                onClick={() => window.open(projects[currentIndex].url, '_blank', 'noopener,noreferrer')}
+            />
+        );
+    }, [currentIndex, projects]);
 
     return (
         <>
-        
             <div className="projects_container">
                 <div className="projects_header">
                     <h3 style={{ margin: 0, color: "white" }}>Our Recent Projects</h3>
@@ -169,8 +187,7 @@ const OurProjects = () => {
                                 isAnimating ? "fade" : ""
                             }`} // Add fade animation
                         >
-                            <img src={projects[currentIndex].image} alt={`proj-${currentIndex + 1}`}
-                                 onClick={() => window.open(projects[currentIndex].url, '_blank', 'noopener,noreferrer')}/>
+                            {currentProjectImage}
                         </div>
 
                         {/* Right Arrow */}
