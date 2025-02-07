@@ -1,6 +1,7 @@
 import './banner.css';
 import React, {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
+import Quote from "../../Quote";
 
 const Banner = () => {
     const bannerImage = '/cloudedesign/banner.jpg';
@@ -8,6 +9,7 @@ const Banner = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [showHeader, setShowHeader] = useState(true); // State to toggle header visibility
     const [activeNav, setActiveNav] = useState('/'); // State to track active navigation
+    const [open, setOpen] = useState(false);
 
     const navigate = useNavigate();
 
@@ -127,7 +129,7 @@ const Banner = () => {
 
                         <div style={{marginTop: "32px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                             <button className='banner_quotes_button' style={{cursor: "pointer"}}
-                                    onClick={() => handleNavigate('/contact')}>Get Quotes
+                                    onClick={() => setOpen(true)}>Get Quotes
                             </button>
                             <button className='banner_header-button' style={{cursor: "pointer", marginLeft: "16px"}}
                                     onClick={() => handleNavigate('/about')}>Get Started
@@ -174,6 +176,8 @@ const Banner = () => {
                         </div>
                     )}
                 </div>
+
+                <Quote open={open} handleClose={() => setOpen(false)}/>
             </div>
         </>
     );

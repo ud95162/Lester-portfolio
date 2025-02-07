@@ -110,7 +110,7 @@ const OurProjects = () => {
                 prevIndex === projects.length - 1 ? 0 : prevIndex + 1
             );
             setIsAnimating(false); // Reset animation after transition
-        }, 500); // Match transition duration
+        }, 0); // Match transition duration
     };
 
     const handlePreviousProject = () => {
@@ -120,7 +120,7 @@ const OurProjects = () => {
                 prevIndex === 0 ? projects.length - 1 : prevIndex - 1
             );
             setIsAnimating(false); // Reset animation after transition
-        }, 500); // Match transition duration
+        }, 0); // Match transition duration
     };
 
     return (
@@ -129,7 +129,7 @@ const OurProjects = () => {
             <div className="projects_container">
                 <div className="projects_header">
                     <h3 style={{ margin: 0, color: "white" }}>Our Recent Projects</h3>
-                    <h1 style={{ marginTop: "10px", color: "white" }} className='project_header'>
+                    <h1 style={{ color: "white" }} className='project_header'>
                         OUR SUCCESS&nbsp;
                         <span
                             style={{
@@ -144,7 +144,7 @@ const OurProjects = () => {
                     </h1>
                 </div>
 
-                <div style={{ position: "relative", padding: "0 30px" }}>
+                <div className="projects_wrapper-container">
                     <div className="projects_wrapper">
                         {/* Left Arrow */}
                         <div
@@ -169,7 +169,8 @@ const OurProjects = () => {
                                 isAnimating ? "fade" : ""
                             }`} // Add fade animation
                         >
-                            <img src={projects[currentIndex].image} alt={`proj-${currentIndex + 1}`} />
+                            <img src={projects[currentIndex].image} alt={`proj-${currentIndex + 1}`}
+                                 onClick={() => window.open(projects[currentIndex].url, '_blank', 'noopener,noreferrer')}/>
                         </div>
 
                         {/* Right Arrow */}
