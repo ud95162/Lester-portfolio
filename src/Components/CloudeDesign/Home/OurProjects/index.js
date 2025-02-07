@@ -11,6 +11,11 @@ const OurProjects = () => {
             url: "https://metroplus.lk"
         },
         {
+            image: "/cloudedesign/ourprojects/stromx.png",
+            description: "Our expertise ensures a seamless user experience, optimized functionality, and a strong digital presence to elevate your brand in the tech industry.",
+            url: "https://stormx.global/"
+        },
+        {
             image: "/cloudedesign/ourprojects/ipermit_.png",
             description: "Ipermit Ltd delivers innovative company web provide web design service for coporate needs.",
             url: "https://www.ipermitusa.com/"
@@ -29,6 +34,11 @@ const OurProjects = () => {
             image: "/cloudedesign/ourprojects/geegstore.png",
             description: "Geegstore specializes in web design, development, and tailored e-commerce solutions to help businesses thrive in the digital marketplace.",
             url: "https://geegstore.lk"
+        },
+        {
+            image: "/cloudedesign/ourprojects/natbound.png",
+            description: "Natbound.lk provides professional web design and development services using Next.js, creating fast, visually stunning, and user-friendly websites tailored for travel companies",
+            url: "https://natbound.lk/"
         },
         {
             image: "/cloudedesign/ourprojects/studiocloudy.png",
@@ -52,18 +62,18 @@ const OurProjects = () => {
         },
         {
             image: "/cloudedesign/ourprojects/projects-02.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "We provide professional UI design services for power solution companies in the UK, crafting modern, intuitive, and user-friendly interfaces. Our designs enhance user engagement, simplify navigation, and effectively showcase energy solutions, ensuring a seamless digital experience for customers and stakeholders.",
+            url: "https://marvelapp.com/prototype/fhab9c3/screen/96371945"
         },
         {
             image: "/cloudedesign/ourprojects/projects-03.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "Our solutions streamline product showcasing, ordering, and transactions, ensuring a seamless digital experience that enhances efficiency and drives business growth.",
+            url: "https://marvelapp.com/prototype/fhab9c3/screen/96371932"
         },
         {
             image: "/cloudedesign/ourprojects/projects-05.png",
-            description: "Project description",
-            url: "https://playhouse.lk"
+            description: "We provide professional UI design services for solar companies in the UK, crafting modern, user-friendly interfaces that enhance engagement and showcase renewable energy solutions effectively. Our designs prioritize clarity, sustainability, and seamless navigation to create a compelling digital experience for your audience.",
+            url: "https://marvelapp.com/prototype/fhab9c3/screen/96372008"
         },
         {
             image: "/cloudedesign/ourprojects/miracalagroproject.png",
@@ -84,6 +94,31 @@ const OurProjects = () => {
             image: "/cloudedesign/ourprojects/spicyproject.png",
             description: "Project description",
             url: "https://spicesusa.com/"
+        },
+        {
+            image: "/cloudedesign/ourprojects/giftopiya.png",
+            description: "Our solutions are tailored to help businesses showcase and sell gifts effortlessly, ensuring seamless transactions and customer engagement.Our other web design for Costmatic retaling industry ",
+            url: "https://giftopiya.com/"
+        },
+        {
+            image: "/cloudedesign/ourprojects/cctvlk.png",
+            description: "CCTV.lk offers professional e-commerce web design and development services, creating secure, high-performance online stores tailored for the surveillance industry. ",
+            url: "https://cctv.lk/"
+        },
+        {
+            image: "/cloudedesign/ourprojects/teacompanyui.png",
+            description: "We provide professional UI design services for tea exporting companies, crafting visually appealing and user-friendly interfaces that highlight premium tea products. Our designs ensure seamless navigation, engaging storytelling, and a strong brand presence to attract global buyers and enhance the digital experience. ",
+            url: "https://marvelapp.com/prototype/fhab9c3/screen/96372033"
+        },
+        {
+            image: "/cloudedesign/ourprojects/teacompanywebdesign.png",
+            description: "We provide professional UI design services for tea companies in the USA, creating visually captivating and user-friendly interfaces that enhance the online shopping experience. Our designs blend elegance with functionality, ensuring seamless navigation and a strong brand identity that resonates with tea enthusiasts. ",
+            url: "https://marvelapp.com/prototype/fhab9c3/screen/96372069"
+        },
+        {
+            image: "/cloudedesign/ourprojects/navitea.png",
+            description: "We provide professional UI design services for Navi Tea, creating a visually elegant and user-friendly website to showcase premium tea exports. Our designs focus on seamless navigation, rich storytelling, and an immersive brand experience, ensuring a captivating digital presence that appeals to global tea buyers.  ",
+            url: "https://marvelapp.com/prototype/fhab9c3/screen/96372027"
         },
         {
             image: "/cloudedesign/ourprojects/sennya.png",
