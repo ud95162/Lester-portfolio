@@ -63,4 +63,9 @@
         text-align: center;
     }
 
+    .contact-form-two_grids{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 }

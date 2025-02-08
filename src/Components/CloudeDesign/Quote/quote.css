@@ -12,3 +12,17 @@
     gap: 5px;
     font-size: 16px;
 }
+.error-text{
+    margin: 0;
+    color: red;
+    font-size: 12px;
+}
+
+@media (max-width: 968px) {
+    .radio-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        padding: 10px 0;
+    }
+}
