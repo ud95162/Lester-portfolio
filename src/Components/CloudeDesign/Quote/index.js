@@ -68,7 +68,7 @@ const Quote = ({open, handleClose}) => {
         setResponseText(""); // Clear previous response
 
         try {
-            const response = await fetch("https://cloudedesign.com/api/generate", {
+            const response = await fetch("https://cloudedesign.com/api/generate/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
