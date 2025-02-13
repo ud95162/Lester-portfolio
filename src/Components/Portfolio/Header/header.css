@@ -1,0 +1,252 @@
+/*.header {*/
+/*    padding: 20px 20px;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    background-color: #f7f6f4;*/
+
+/*    top: 0;*/
+/*    position: sticky;*/
+/*    z-index: 1000;*/
+/*}*/
+
+/*.logo {*/
+/*    padding-left: 50px;*/
+/*    !*position: absolute;*!*/
+/*}*/
+
+/*.nav-bar {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.nav-bar ul {*/
+/*    list-style-type: none;*/
+/*}*/
+
+/*.nav-bar li {*/
+/*    display: inline-block;*/
+/*    padding: 5px 10px;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.nav-bar li a {*/
+/*    text-decoration: none;*/
+/*    color: black;*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*.nav-bar li a:hover {*/
+/*    color: #c47440;*/
+/*    font-weight: 600;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.header-button {*/
+/*    display: flex;*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    padding: 15px 20px;*/
+/*    border: none;*/
+/*    border-radius: 30px;*/
+/*    font-size: 16px;*/
+/*    height: 40px;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*.header-button-secondary {*/
+/*    display: flex;*/
+/*    background-color: rgb(223, 223, 223);*/
+/*    color: black;*/
+/*    padding: 15px 20px;*/
+/*    border: none;*/
+/*    border-radius: 30px;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*!* Hamburger Icon *!*/
+/*.hamburger {*/
+/*    display: none;*/
+/*    flex-direction: column;*/
+/*    gap: 4px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*!* Hamburger Open (Close Icon) *!*/
+/*.hamburger.open span:nth-child(1) {*/
+/*    transform: rotate(45deg);*/
+/*    top: 6.5px;*/
+/*}*/
+
+/*.hamburger.open span:nth-child(2) {*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.hamburger.open span:nth-child(3) {*/
+/*    transform: rotate(-45deg);*/
+/*    top: -6.5px;*/
+/*}*/
+
+/*.hamburger span {*/
+/*    width: 25px;*/
+/*    height: 2px;*/
+/*    background-color: black;*/
+/*    position: relative;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+/*@media (max-width: 905px) {*/
+/*    .header {*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    .logo {*/
+/*        padding-left: 0;*/
+/*    }*/
+
+/*}*/
+
+/*!* Responsive Styles *!*/
+/*@media (max-width: 1028px) {*/
+/*    .header {*/
+/*        justify-content: space-between;*/
+/*    }*/
+
+/*    .nav-bar li {*/
+/*        display: inline-block;*/
+/*        padding: 10px 30px;*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    !* Show Hamburger on Mobile *!*/
+/*    .hamburger {*/
+/*        display: flex;*/
+/*    }*/
+
+/*    !* Hide Menu Items and Button Initially *!*/
+/*    .menu-items {*/
+/*        display: none;*/
+/*        position: absolute;*/
+/*        top: 50px;*/
+/*        right: 0;*/
+/*        background-color: white;*/
+/*        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/*        padding: 10px 2px;*/
+/*        border-radius: 5px;*/
+/*        flex-direction: column;*/
+/*        width: 100%;*/
+/*        text-align: left;*/
+/*    }*/
+
+/*    .menu-items.show {*/
+/*        display: flex;*/
+/*        z-index: 1;*/
+/*    }*/
+
+/*    !* Hide the Get Template Button on Mobile *!*/
+/*    .header-button {*/
+/*        display: none;*/
+/*    }*/
+
+/*}*/
+
+/*@keyframes fadeIn {*/
+/*    from {*/
+/*        background-color: rgb(247, 246, 244, 0.6);*/
+/*    }*/
+/*    to {*/
+/*        background-color: rgb(247, 246, 244); !* Target color *!*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1028px) {*/
+/*    .header {*/
+/*        top: 0;*/
+/*        z-index: 10;*/
+/*        !*background-color: rgb(247, 246, 244, 0.6);*!*/
+/*        position: sticky;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    .header.scrolled {*/
+/*        animation: fadeIn 1s forwards;*/
+/*    }*/
+
+/*    .logo {*/
+/*        padding-left: 0;*/
+/*    }*/
+
+
+/*    .menu-items.show {*/
+/*        display: flex;*/
+/*    }*/
+
+/*    !* Hide the Get Template Button on Mobile *!*/
+/*    .header-button {*/
+/*        display: none;*/
+/*    }*/
+
+/*}*/
+
+/*@media (max-width: 480px) {*/
+/*    .header {*/
+/*        top: 0;*/
+/*        padding: 5px;*/
+/*    }*/
+
+/*    .nav-bar li {*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    .header-button {*/
+/*        padding: 8px 15px;*/
+/*        font-size: 14px;*/
+/*    }*/
+/*}*/
+
+/*.banner_nav-item.active a {*/
+/*    color: #c47440; !* Highlight color for active nav *!*/
+/*}*/
+
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-list li{
+    list-style-type: none;
+    display: inline;
+}
+.list-item{
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.list-item a:hover{
+    cursor: pointer;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-container button{
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.logo{
+    height: 150px;
+}
