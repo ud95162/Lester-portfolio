@@ -19,7 +19,7 @@ const Header = () => {
                     <li className="list-item"> <a onClick={() => scrollToSection('contact-us-section')}>contact us</a></li>
                 </ul>
             </div>
-            <div className="logo" style={{background:'url(/portfolio/logo-transparent.png)'}}>
+            <div className="logo" style={{backgroundImage:'url(/portfolio/logo-transparent.png)'}}>
             </div>
             <div className="header-button-container">
                 <button>Make an Appointment
