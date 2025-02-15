@@ -1,0 +1,90 @@
+.banner-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height:35vw;
+    background-size:contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.banner{
+    position: relative;
+}
+.banner-description{
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+.banner-bg-container{
+    height: 60vw;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:1600px){
+    .banner-bg-container{
+        height: 55vw;
+    }
+}
+@media (max-width: 1400px) {
+    .banner-bg-container{
+        height: 55vw;
+    }
+    .banner-container{
+        height: 35vw;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .banner-bg-container{
+        height: 55vw;
+    }
+    .banner-container{
+        height: 35vw;
+    }
+}
+@media (max-width: 998px) {
+    .banner-bg-container {
+        height: 55vw;
+    }
+    .banner-container{
+        height: 30vw;
+    }
+
+}
+@media (max-width: 768px) {
+    .banner-bg-container{
+        height: 55vw;
+    }
+    .banner-container:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.5);
+            z-index: 1;
+    }
+    .banner-container{
+        height: 30vw;
+    }
+}
+@media (max-width: 480px) {
+    .banner-bg-container{
+        height: 50vw;
+    }
+    .banner-description{
+        padding: 0 10px 0 50px;
+    }
+    .banner-container{
+        height: 35vw;
+    }
+
+}

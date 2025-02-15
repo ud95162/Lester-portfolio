@@ -1,17 +1,94 @@
 .footer_container{
-    padding: 50px 100px 150px;
-    background: linear-gradient(to bottom, #e5e5e5, #bbbbbb);
+    padding: 0 ;
+    background: #000000;
     position: relative;
 }
 
 .footer_top{
-    padding: 20px;
+    padding: 0 200px;
     display: grid;
-    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-columns:  1fr 1fr;
     gap: 10px;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #9b9b9b;
+}
+
+.left-right-border{
+    border-right: 1px solid white;
+    border-left:1px solid white;
+    width: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.right-border{
+    border-right: 1px solid white;
+    width: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.white-font{
+    color:#ffffff;
+}
+.sub-header{
+    color: white;
+    font-weight: 800;
+}
+
+.small-divider{
+    background-color: white;
+    width: 2px;
+    height: 10px;
+}
+.bottom-section-container{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bottom-right-section{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+.divider{
+    background: white;
+    width: 1px;
+    height: 100%;
+}
+.nav-links{
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+.nav-links-right{
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+
+
+}
+.footer-top-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-top-left{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    align-items: center;
+
+}
+.footer-top-right{
+    display: flex;
+    height: 100%;
+    justify-content: end;
 }
 
 .footer_top-header{
@@ -34,21 +111,18 @@
 }
 
 .footer-body{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    height: 10vw;
 }
 
 .footer-bottom-section{
-    position: absolute; /* Positions it at the bottom of the footer */
-    bottom: 10px; /* Add some spacing from the bottom */
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    text-align: center;
+    padding: 20px 100px ;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    border-top: 1px solid white;
 }
 .footer-contact-details{
     display: flex;
@@ -106,17 +180,65 @@
         display: none;
     }
     .footer-body_section {
-        /*display: flex;*/
         flex-direction: column;
         justify-content: center;
         align-items: center;    }
 
     }
-@media (max-width: 776px) {
-    .footer_top{
-        grid-template-columns: 1fr;
+
+@media (max-width: 1600px) {
+    .footer_top {
+        padding: 0 100px;
+    }
+    .footer-body{
+        padding: 20px 100px;
+        height: 10vw;
 
     }
+}
+
+@media (max-width: 998px) {
+    .footer_top {
+        padding: 0 50px;
+    }
+    .footer-body{
+        padding: 20px 50px;
+        height: 8vw;
+
+    }
+    .footer-bottom-section{
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 998px) {
+    .nav-links-right{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 776px) {
+
+    .footer-body{
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-body{
+        gap: 5px;
+    }
+    .footer-top-left{
+        display: none;
+    }
+    .footer_top {
+        padding: 10px 50px;
+        grid-template-columns: 1fr;
+    }
+    .footer-top-right{
+        justify-content: center;
+    }
+
     .footer-header-h1{
         font-size: 25px;
     }
@@ -131,8 +253,24 @@
         justify-content: center;
     }
 
-    .footer_container{
-        padding: 50px 10px 150px;
-    }
 
+
+}
+
+@media (max-width: 710px) {
+    .footer-bottom-section{
+        grid-template-columns: 1fr;
+    }
+    .bottom-right-section{
+        align-items: center;
+    }
+    .footer-bottom-section {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-bottom-section {
+        padding: 20px 0px;
+    }
 }

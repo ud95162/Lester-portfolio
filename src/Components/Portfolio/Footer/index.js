@@ -1,98 +1,73 @@
 import './footer.css';
+import { FaYoutube, FaFacebookF, FaLinkedinIn} from 'react-icons/fa';
+import {FaXTwitter} from "react-icons/fa6";
 
 const Footer = () => {
     return (
         <>
             <div className="footer_container">
                 <div className="footer_top">
-                    <div className="footer_top-header">
-                        <h1 className='footer-header-h1'>TALK TO US</h1>
-                    </div>
-                    <div className="footer_top-arrow">
-                        <img src="/cloudedesign/icons/right-arrow-black.svg" alt="black-arrow" style={{width: "60px"}}/>
-                    </div>
-                    <div className="footer_top-social_icons">
-                        <img src="/cloudedesign/icons/linkedin.svg" alt="linkedin" style={{width: "30px"}}/>
-                        <img src="/cloudedesign/icons/twitter.svg" alt="twitter"
-                             style={{width: "30px", marginLeft: "5px"}}/>
-                        <img src="/cloudedesign/icons/youtube.svg" alt="youtube"
-                             style={{width: "30px", marginLeft: "5px"}}/>
-                        <img src="/cloudedesign/icons/instagram.svg" alt="insta"
-                             style={{width: "30px", marginLeft: "5px"}}/>
-                        <img src="/cloudedesign/icons/whatsapp.svg" alt="whatsapp"
-                             style={{width: "30px", marginLeft: "5px"}}/>
-                        <img src="/cloudedesign/icons/facebook.svg" alt="fb"
-                             style={{width: "30px", marginLeft: "5px"}}/>
-                    </div>
-                </div>
-
-                <div className="footer-body">
-                    <div className="footer-body_section quick">
-                        <h3>NAVIGATION</h3>
-                        <span style={{fontWeight: 600}}>HOME</span>
-                        <span style={{fontWeight: 600}}>OUR SERVICES</span>
-                        <span style={{fontWeight: 600}}>WORK WITH US</span>
-                        <span style={{fontWeight: 600}}>ABOUT US</span>
-                    </div>
-
-                    <div className="footer-body_section quick">
-                        <h3>COMPANY</h3>
-                        <span style={{fontWeight: 600}}>CAREERS</span>
-                        <span style={{fontWeight: 600}}>CONTACT</span>
-                        <span style={{fontWeight: 600}}>FAQS</span>
-                        <span style={{fontWeight: 600}}>ABOUT US</span>
-                    </div>
-
-                    <div className="footer-body_section quick">
-                        <h3>RESOURCES</h3>
-                        <span style={{fontWeight: 600}}>TERMS & CONDITIONS</span>
-                        <span style={{fontWeight: 600}}>PRIVACY</span>
-                        <span style={{fontWeight: 600}}>CHANGELOG</span>
-                    </div>
-
-                    <div className="footer-body_section">
-                        <img src="/cloudedesign/cloude_logo_black.png" alt="logo" style={{width: "320px"}}/>
-                        <div className="footer-contact-details">
-                            <span style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
-                                <img src="/cloudedesign/icons/email.svg" alt="email" style={{width: "16px"}}/>
-                                <a href='mailto:info@cloudedesign.com' target='_blank'
-                                     rel="noopener noreferrer" style={{fontWeight: 600, marginLeft: "8px"}}>info@cloudedesign.com
-                                </a>
-                            </span>
-
-                            <span style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
-                                <img src="/cloudedesign/icons/mobile.svg" alt="mobile" style={{width: "16px"}}/>
-                                <div style={{display: "grid"}}>
-                                   <a href="tel:+94 70 589 4780" target='_blank' rel="noopener noreferrer"
-                                      style={{fontWeight: 600, marginLeft: "8px"}}> +94 70 589 4780
-                                   </a>
-                                   <a href="tel:+94 11 217 5690" target='_blank' rel="noopener noreferrer"
-                                      style={{fontWeight: 600, marginLeft: "8px"}}> +94 11 217 5690
-                                   </a>
-                                </div>
-
-                            </span>
-
-                            <span style={{
-                                fontWeight: 600,
-                                display: "flex",
-                                justifyContent: "flex-start",
-                                alignItems: "center",
-                                fontSize: "14px"}}>
-                                <img src="/cloudedesign/icons/location.svg" alt="location" style={{width: "16px", marginRight: "8px"}}/>
-                                No159/13, Premier Park, Mullegama, Homagama,Sri Lanka</span>
-
+                        <div className='footer-top-left'>
+                            <p style={{color:'white',fontWeight:800}}>Sign up for newsletter</p>
+                            <img src='/portfolio/right-arrows.svg' width='30px' alt={"right-arrow"} style={{color:"white"}} />
+                        </div>
+                    <div className={'footer-top-right'}>
+                        <div></div>
+                        <div></div>
+                        <div className="left-right-border">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="white-font"><FaFacebookF/></a>
+                        </div>
+                        <div className="right-border">
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className='white-font'><FaXTwitter/></a>
+                        </div>
+                        <div className="right-border">
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="white-font"><FaYoutube/></a>
+                        </div>
+                        <div className="right-border">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="white-font"><FaLinkedinIn/></a>
                         </div>
                     </div>
                 </div>
-
+                <div className="footer-body">
+                    <div>
+                        <h2 className="sub-header">Address</h2>
+                        <p className="white-font">No 401/2,Pitipana Road, Homagama, SriLanka</p>
+                    </div>
+                    <div className="divider"></div>
+                    <div>
+                        <h2 className="sub-header">Call Us</h2>
+                        <p className="white-font">+94717430419</p>
+                    </div>
+                    <div className="divider"></div>
+                    <div>
+                        <h2 className="sub-header">Email Us</h2>
+                        <p className="white-font">info@natbound.lk</p>
+                    </div>
+                </div>
                 <div className="footer-bottom-section">
-                    <span style={{
-                        textAlign: "center",
-                        width: '100%',
-                        fontSize: "14px"
-                    }}>© CloudeDesign 2024 - All Rights Reserved </span>
-
+                    <div className="bottom-section-container">
+                        <p  className="nav-links">Home</p>
+                        <div className="small-divider"></div>
+                        <p className="nav-links">Portfolio</p>
+                        <div className="small-divider"></div>
+                        <p className="nav-links">About Us</p>
+                        <div className="small-divider"></div>
+                        <p className="nav-links">Contact Us</p>
+                    </div>
+                    <div className="bottom-right-section">
+                        <div className="bottom-section-container">
+                            <span className="nav-links-right">Privacy Policy</span>
+                            <div className="small-divider"></div>
+                            <span className="nav-links-right">Terms & Conditions</span>
+                            <div className="small-divider"></div>
+                            <span className="nav-links-right">Site Map</span>
+                        </div>
+                        <div className="bottom-section-container">
+                            <span className="nav-links-right">© 2025 Lester Perera. All Rights Reserved</span>
+                            <div className="small-divider"></div>
+                            <span className="nav-links-right">Design and  Develop by Cloud Design</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 

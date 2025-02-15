@@ -42,44 +42,136 @@
 
 /* H1 Styles */
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600; /* SemiBold */
-  font-size: 48px; /* 48Pt */
+  font-size: 74pt; /* 48Pt */
   letter-spacing: -0.25px; /* Font Dpace */
-  line-height: 56px; /* Line Height */
-  color: #081226;
+  line-height: 80pt; /* Line Height */
+  color: #000000;
 }
 
 /* H2 Styles */
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600; /* SemiBold */
-  font-size: 30px; /* 30Pt */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 22pt; /* 30Pt */
   letter-spacing: -0.25px; /* Font Dpace */
-  line-height: 36px; /* Line Height */
-  color: #081226;
+  line-height: 28px; /* Line Height */
+  color: #000000;
 }
 
 /* H3 Styles */
 h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700; /* Bold */
-  font-size: 18px; /* 18Pt */
+  font-family: 'Trirong', serif;
+  font-weight: lighter;
+  font-style: italic; /* Bold */
+  font-size:26pt; /* 18Pt */
   letter-spacing: -0.25px; /* Font Dpace */
-  line-height: 24px; /* Line Height */
+  line-height:28pt; /* Line Height */
   color: #081226;
 }
 
 /* Body Font Styles */
 body, p, span, li, a, input {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Trirong', sans-serif;
   font-weight: 400; /* Regular */
-  font-size: 16px; /* 16Pt */
-  letter-spacing: 0.5px; /* Font Dpace */
-  line-height: 26px; /* Line Height */
-  color: #081226;
+  font-size: 14pt; /* 16Pt */
+  letter-spacing: -0.25px; /* Font Dpace */
+  line-height: 30pt; /* Line Height */
+  color: #453f4b;
 }
 
 .space10{
   margin: 10px 0;
+}
+
+
+@media (max-width: 1600px) {
+  h1{
+    font-size: 52pt;
+  }
+}
+
+@media (max-width: 1400px) {
+  h1{
+    font-size: 52pt;
+  }
+  h3{
+    font-size: 22pt;
+    line-height: 22pt;
+  }
+  body, p, span, li, a, input {
+    font-size: 12pt;
+    line-height: 16pt;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1{
+    font-size: 32pt;
+    line-height: 36pt;
+  }
+  h2{
+    font-size: 16pt;
+    line-height: 18pt;
+  }
+  body, p, span, li, a, input {
+    font-size: 12pt;
+    line-height: 16pt;
+  }
+  h3{
+    font-size: 18pt;
+    line-height: 18pt;
+  }
+  
+}
+
+
+@media (max-width: 998px) {
+  body, p, span, li, a, input {
+    font-size: 8pt;
+    line-height: 10pt;
+  }
+  h2{
+    font-size: 12pt;
+    line-height: 16pt;
+  }
+  h3{
+    font-size: 16pt;
+  }
+  h1{
+    font-size: 28pt;
+    line-height: 30pt;
+  }
+}
+
+@media (max-width: 768px) {
+  h3{
+    font-size: 12pt;
+  }
+  body, p, span, li, a, input {
+    font-size: 6pt;
+  }
+  h2{
+    font-size: 10pt;
+    line-height: 12pt;
+  }
+  h1{
+    font-size: 24pt;
+    line-height: 26pt;
+  }
+}
+
+@media (max-width: 550px) {
+  h3{
+    font-size: 10pt;
+    line-height: 12pt;
+  }
+}
+
+@media (max-width: 480px) {
+  h3{
+    font-size: 8pt;
+    line-height: 10pt;
+  }
 }

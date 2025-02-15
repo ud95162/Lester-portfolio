@@ -1,0 +1,100 @@
+.why-container{
+    margin: 100px 0 100px 100px;
+    background-color: #000000;
+}
+
+.why-content{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 100px;
+}
+
+.why-title{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+
+}
+
+.button-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.button-container button{
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.why-description{
+    text-align: justify;
+    margin-top: 50px;
+    color: white;
+
+}
+.why-header{
+    color: white;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.nat-image{
+    width:250px;
+}
+
+.why-sub-header{
+    color: white;
+    margin-top: 10px;
+}
+.why-img{
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-img img{
+    width: 100%;
+}
+
+@media (max-width: 1600px) {
+    .why-content{
+        padding: 50px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .why-img{
+        padding-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .button-container button{
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 880px) {
+    .why-content{
+        grid-template-columns: 2fr;
+    }
+    .why-img{
+        padding: 50px;
+        display: none;
+    }
+    .why-container{
+        margin: 100px 0 20px 0px;
+    }
+    .why-description{
+        margin-top: 10px;
+    }
+
+}

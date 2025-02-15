@@ -1,0 +1,22 @@
+.about-us-container{
+    margin: 100px 100px 10px 100px;
+}
+
+.about-us-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.hr-line{
+    background:black;
+    height:1px;
+    width:100%;
+    margin-top:50px;
+    align-items:center;
+}
+@media (max-width: 800px) {
+    .about-us-container{
+        margin: 10px;
+
+    }
+}
