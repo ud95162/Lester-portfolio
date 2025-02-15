@@ -4,5 +4,13 @@
     padding: 50px;
 }
 .logo-container img{
-    height: 100px;
+    height: 200px;
+}
+
+
+@media (max-width: 500px) {
+    .logo-container img{
+        height: 100px;
+    }
+
 }
