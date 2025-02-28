@@ -65,7 +65,10 @@ const Footer = () => {
                         <div className="bottom-section-container">
                             <span className="nav-links-right">© 2025 Lester Perera. All Rights Reserved</span>
                             <div className="small-divider"></div>
-                            <span className="nav-links-right">Design and  Develop by Cloud Design</span>
+                            <span className="nav-links-right">
+        Design and Develop by <a href="https://www.cloudedesign.com" target="_blank"
+                                 rel="noopener noreferrer">CloudeDesign</a>
+    </span>
                         </div>
                     </div>
                 </div>

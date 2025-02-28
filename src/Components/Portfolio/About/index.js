@@ -8,8 +8,14 @@ const About = () => {
                 <div className="about-description">
                     <h1 style={{margin: 0}}>Lester Perera</h1>
                     <h2 style={{marginTop: 0}}>Birder and Bird Artist</h2>
-                    <span className="description">Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus neque turpis, phasellus varius facilisis praesent penatibus tortor? Etiam malesuada venenatis torquent volutpat orci id egestas duis orci. Cras ridiculus varius vivamus hendrerit senectus iaculis sagittis. Aptent venenatis netus pulvinar nam augue vivamus. Feugiat congue conubia torquent tempor tellus primis! Tempus a sapien integer nullam class vitae rhoncus pretium.</span>
-                    <span>Magnis enim risus vitae sociosqu massa quisque dapibus. Dignissim nisi diam viverra fermentum </span>
+                    <span className="description">Lester’s dedicated professional tour leading experience
+                        in Sri Lanka and India for over two and a half decades has encouraged him to create a
+                        broader and wider spectrum of wildlife tours in south Asia. His acumen in Birding and
+                        wildlife tourism is widely respected in Sri Lanka and India as well. Our portfolio of
+                        itineraries encapsulates the whole Indian subcontinent. We hope to expose more regions
+                        in our product profile in the future.
+
+ </span>
                     <div>
                         <img src='/portfolio/sign.png' alt="Lester-sign" className={"img-sign"}/>
                     </div>

@@ -14,13 +14,11 @@ const Why = () => {
                         <img src={"/portfolio/nat-copy.png"} alt="natbound" className="nat-image"/>
                         <h1 className="why-header">Why Natbound</h1>
                         <h2 className="why-sub-header">Experience, Ethics, & Exploration in Wildlife Tourism</h2>
-                        <p className="why-description" >Lorem ipsum odor amet,
-                            consectetuer adipiscing elit. Ridiculus neque
-                            turpis, phasellus varius facilisis praesent penatibus tortor? Etiam malesuada venenatis
-                            torquent volutpat orci id egestas duis orci. Cras ridiculus varius vivamus hendrerit
-                            senectus iaculis sagittis. Aptent venenatis netus pulvinar nam augue vivamus. Feugiat congue
-                            conubia torquent tempor tellus primis! Tempus a sapien integer nullam class vitae rhoncus
-                            pretium.
+                        <p className="why-description" >Natbound’s experience spans over two decades in Sri Lanka and
+                            India inclusive of the Andaman Islands as well. The familiarity with all critters to the
+                            larger forms are, our forte. From Ladhak in the north of India to the southern tip of Sri Lanka
+                            and from Gujarat in the west to Tinsukia in Assam in the east, is within the frame work of our product profile.
+                            Our explorations into other parts of the subcontinent isn’t over with, it is the enthusiasm we have within that creates the drive and to further provide our clientele with the best experience.
                         </p>
                         <div className="button-container" >
                             <button >Make an Appointment</button>
