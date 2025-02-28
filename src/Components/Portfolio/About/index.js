@@ -16,11 +16,7 @@ const About = () => {
                         in our product profile in the future.
 
  </span>
-                    <div>
-                        <img src='/portfolio/sign.png' alt="Lester-sign" className={"img-sign"}/>
-                    </div>
-                </div>
-                <div>
+
                 </div>
             </div>
         </div>
